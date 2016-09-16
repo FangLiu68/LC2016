@@ -1,15 +1,36 @@
-//
-//  main.cpp
-//  LC2016
-//
-//  Created by Fang Liu on 3/21/16.
-//  Copyright © 2016 Fang Liu. All rights reserved.
-//
-
+#include <vector>
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+void test_bubble_sort(vector<int>& input){
+    if(input.empty()){
+        return;
+    }
+    
+    for(int i=0; i<input.size()-1; ++i){
+        for(int j=i+1; j<input.size(); ++j){
+            if(input[i] > input[j]){
+                // swap input[i] input[j]
+                int temp = input[i];
+                input[i] = input[j];
+                input[j] = temp;
+            }
+        }
+    }
+}
+
+void test_insertion_sort(vector<int>& input){
+    if(input.empty()){
+        return;
+    }
+    
+    
+}
+
+void test_selection_sort(vector<int>& input){
+    if(input.empty()){
+        return;
+    }
+    
+    
 }

@@ -1,0 +1,9 @@
+Sorting is ordering a list of objects. We can distingguish two types of sorting.
+If number of objects is small enough to fits into the main memory, sorting is called internal sorting.
+If the number of objets is so large that some of them reside on external storage during the sort, it is called external sorting.
+bucket sort
+bubble sort
+insertion sort
+selection sort
+heap sort
+merge sort
