@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */; };
-		E30EE2C41D45A1B000FCAFFF /* Rotate Image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C31D45A1B000FCAFFF /* Rotate Image.cpp */; };
 		E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */; };
 		E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */; };
 		E30EE2CA1D45BE3B00FCAFFF /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C91D45BE3B00FCAFFF /* Triangle.cpp */; };
@@ -36,7 +35,6 @@
 		E33370151CB3312300728057 /* Reverse Words in Sentence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33370141CB3312300728057 /* Reverse Words in Sentence.cpp */; };
 		E33370171CB3387200728057 /* Shift Word.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33370161CB3387200728057 /* Shift Word.cpp */; };
 		E33370191CB356E900728057 /* String replace (short to long).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33370181CB356E900728057 /* String replace (short to long).cpp */; };
-		E333701B1CB35D9200728057 /* String Replace (long to short).cpp in Sources */ = {isa = PBXBuildFile; fileRef = E333701A1CB35D9200728057 /* String Replace (long to short).cpp */; };
 		E333701D1CB4121600728057 /* Compress Str I.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E333701C1CB4121600728057 /* Compress Str I.cpp */; };
 		E333701F1CB418CD00728057 /* Compress Str II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E333701E1CB418CD00728057 /* Compress Str II.cpp */; };
 		E33370211CB44B7700728057 /* Decompress Str I.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33370201CB44B7700728057 /* Decompress Str I.cpp */; };
@@ -153,6 +151,7 @@
 		E3CDE61D1CC172E2008C0F71 /* Is Complete Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CDE61C1CC172E2008C0F71 /* Is Complete Binary Tree.cpp */; };
 		E3CDE61F1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */; };
 		E3CDE6271CC554A7008C0F71 /* Permutation No Dup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */; };
+		E3DD84871D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */; };
 		E3FDA13F1D650B6E0045DF75 /* Bubble Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */; };
 		E3FDA1411D6517BD0045DF75 /* Insertion Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */; };
 		E3FF977D1CA6EB3300B78E30 /* Get Height of BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF977C1CA6EB3300B78E30 /* Get Height of BT.cpp */; };
@@ -179,7 +178,6 @@
 
 /* Begin PBXFileReference section */
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
-		E30EE2C31D45A1B000FCAFFF /* Rotate Image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Rotate Image.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
 		E30EE2C91D45BE3B00FCAFFF /* Triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
@@ -207,7 +205,6 @@
 		E33370141CB3312300728057 /* Reverse Words in Sentence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Reverse Words in Sentence.cpp"; sourceTree = "<group>"; };
 		E33370161CB3387200728057 /* Shift Word.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Shift Word.cpp"; sourceTree = "<group>"; };
 		E33370181CB356E900728057 /* String replace (short to long).cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "String replace (short to long).cpp"; sourceTree = "<group>"; };
-		E333701A1CB35D9200728057 /* String Replace (long to short).cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "String Replace (long to short).cpp"; sourceTree = "<group>"; };
 		E333701C1CB4121600728057 /* Compress Str I.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Compress Str I.cpp"; sourceTree = "<group>"; };
 		E333701E1CB418CD00728057 /* Compress Str II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Compress Str II.cpp"; sourceTree = "<group>"; };
 		E33370201CB44B7700728057 /* Decompress Str I.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Decompress Str I.cpp"; sourceTree = "<group>"; };
@@ -327,6 +324,7 @@
 		E3CDE61C1CC172E2008C0F71 /* Is Complete Binary Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Complete Binary Tree.cpp"; sourceTree = "<group>"; };
 		E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Count Complete Binary Tree Nodes.cpp"; sourceTree = "<group>"; };
 		E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Permutation No Dup.cpp"; sourceTree = "<group>"; };
+		E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Nth Node From End of List.cpp"; sourceTree = "<group>"; };
 		E3FDA13D1D6506230045DF75 /* Sort Algorithms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sort Algorithms"; sourceTree = "<group>"; };
 		E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bubble Sort.cpp"; sourceTree = "<group>"; };
 		E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Insertion Sort.cpp"; sourceTree = "<group>"; };
@@ -378,7 +376,6 @@
 				E33370141CB3312300728057 /* Reverse Words in Sentence.cpp */,
 				E33370161CB3387200728057 /* Shift Word.cpp */,
 				E33370181CB356E900728057 /* String replace (short to long).cpp */,
-				E333701A1CB35D9200728057 /* String Replace (long to short).cpp */,
 				E333701C1CB4121600728057 /* Compress Str I.cpp */,
 				E333701E1CB418CD00728057 /* Compress Str II.cpp */,
 				E33370201CB44B7700728057 /* Decompress Str I.cpp */,
@@ -581,7 +578,6 @@
 				E3AC0D941D419E5E00CE7A16 /* Search in Rotated Sorted Array.cpp */,
 				E3AC0D961D41AC0B00CE7A16 /* Search Insert Position.cpp */,
 				E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */,
-				E30EE2C31D45A1B000FCAFFF /* Rotate Image.cpp */,
 				E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */,
 				E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */,
 				E37EFF751D4949B000B50582 /* First Missing Positive.cpp */,
@@ -613,6 +609,7 @@
 				E33A59B81CB6C57700497735 /* Deep Copy Skip List.cpp */,
 				E33A59BA1CB6C9E700497735 /* Deep Copy Graph.cpp */,
 				E318C69D1D88C3D500F12C80 /* Swap Nodes in Pairs.cpp */,
+				E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */,
 			);
 			name = "Linked List";
 			sourceTree = "<group>";
@@ -792,7 +789,6 @@
 				E314ED0C1D5D557200C05504 /* Valid Perfect Square.cpp in Sources */,
 				E3AC0D911D40153300CE7A16 /* Find Mininum in Rotated Sorted Array.cpp in Sources */,
 				E3FF977D1CA6EB3300B78E30 /* Get Height of BT.cpp in Sources */,
-				E333701B1CB35D9200728057 /* String Replace (long to short).cpp in Sources */,
 				E37EFF7C1D497C8F00B50582 /* Insert Interval.cpp in Sources */,
 				E33A599A1CB566B600497735 /* Num of Tree Nodes.cpp in Sources */,
 				E3FDA13F1D650B6E0045DF75 /* Bubble Sort.cpp in Sources */,
@@ -802,7 +798,6 @@
 				E3CDE6051CBE818B008C0F71 /* Sorted Arr to BST.cpp in Sources */,
 				E3FF97881CA7538B00B78E30 /* K Smallest Elem in Unsorted Arr.cpp in Sources */,
 				E3CB9EAB1CA0C7D100CD17B6 /* main.cpp in Sources */,
-				E30EE2C41D45A1B000FCAFFF /* Rotate Image.cpp in Sources */,
 				E333700D1CB2C48000728057 /* Remove Adj Repeated Char Keep None.cpp in Sources */,
 				E37EFF701D4870D700B50582 /* Unique Paths II.cpp in Sources */,
 				E37EFF6C1D486DC400B50582 /* Unique Paths.cpp in Sources */,
@@ -913,6 +908,7 @@
 				E33A59C11CB6FF1400497735 /* Merge K Sorted Lists.cpp in Sources */,
 				E37EFF7E1D49837C00B50582 /* Guess Number Higher or Lower.cpp in Sources */,
 				E388A67C1CA2158900EC73EA /* Move Zero to Right End.cpp in Sources */,
+				E3DD84871D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp in Sources */,
 				E33A59AD1CB5D13C00497735 /* Remove Dup in Sorted Arr Keep None.cpp in Sources */,
 				E314ED0E1D5D5A0E00C05504 /* Median of Two Sorted Arrays.cpp in Sources */,
 				E3CDE6091CBE937F008C0F71 /* Has Sum Root To Leaf.cpp in Sources */,
