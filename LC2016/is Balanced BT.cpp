@@ -1,10 +1,11 @@
 //
-//  is Balanced BT.cpp
+//  Is Balanced BT.cpp
 //  LC2016
 //
-//  Created by Fang Liu on 3/26/16.
+//  Created by Fang Liu on 9/19/16.
 //  Copyright © 2016 Fang Liu. All rights reserved.
 //
+
 
 /*
  determine whether a binary tree is a balanced binary tree.
@@ -16,10 +17,10 @@
 #include "BinaryTree.h"
 
 /*
-                        10  root (2 times getHeight n/2 + n/2)-->O(n)
-                /                  \
-    5(2 times getHeight  n/2)       15(n/2)  -->O(n)
-    /               \               /   \
+ 10  root (2 times getHeight n/2 + n/2)-->O(n)
+ /                  \
+ 5(2 times getHeight  n/2)       15(n/2)  -->O(n)
+ /               \               /   \
  3(N/4)             9(N/4)     12(N/4)  20(N/4)
  total level = log(n) level
  for each level   O(n)
@@ -95,24 +96,24 @@ int isBalancedBT_fast(BinaryTreeNode* root){
 }
 
 /*
-int main(){
-    BinaryTreeNode* root = new BinaryTreeNode(1);
-    BinaryTreeNode* node2 = new BinaryTreeNode(2);
-    BinaryTreeNode* node3 = new BinaryTreeNode(3);
-    BinaryTreeNode* node4 = new BinaryTreeNode(4);
-    BinaryTreeNode* node5 = new BinaryTreeNode(5);
-    BinaryTreeNode* node6 = new BinaryTreeNode(6);
-    root->left = node2;
-    root->right = node3;
-    node2->left = node4;
-    node3->right = node6;
-    node4->right = node5;
-    
-    if(isBalancedBT_fast(root)){
-        cout << 1 << endl;
-    }else{
-        cout << 0 << endl;
-    }
-    
-    return 0;
-}*/
+ int main(){
+ BinaryTreeNode* root = new BinaryTreeNode(1);
+ BinaryTreeNode* node2 = new BinaryTreeNode(2);
+ BinaryTreeNode* node3 = new BinaryTreeNode(3);
+ BinaryTreeNode* node4 = new BinaryTreeNode(4);
+ BinaryTreeNode* node5 = new BinaryTreeNode(5);
+ BinaryTreeNode* node6 = new BinaryTreeNode(6);
+ root->left = node2;
+ root->right = node3;
+ node2->left = node4;
+ node3->right = node6;
+ node4->right = node5;
+ 
+ if(isBalancedBT_fast(root)){
+ cout << 1 << endl;
+ }else{
+ cout << 0 << endl;
+ }
+ 
+ return 0;
+ }*/

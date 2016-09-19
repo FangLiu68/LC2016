@@ -152,10 +152,10 @@
 		E3CDE61F1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */; };
 		E3CDE6271CC554A7008C0F71 /* Permutation No Dup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */; };
 		E3DD84871D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */; };
+		E3DD848D1D9060720039D1DF /* Is Balanced BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD848C1D9060720039D1DF /* Is Balanced BT.cpp */; };
 		E3FDA13F1D650B6E0045DF75 /* Bubble Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */; };
 		E3FDA1411D6517BD0045DF75 /* Insertion Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */; };
 		E3FF977D1CA6EB3300B78E30 /* Get Height of BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF977C1CA6EB3300B78E30 /* Get Height of BT.cpp */; };
-		E3FF977F1CA6F01D00B78E30 /* is Balanced BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF977E1CA6F01D00B78E30 /* is Balanced BT.cpp */; };
 		E3FF97811CA6FE6800B78E30 /* Is Symmetric BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF97801CA6FE6800B78E30 /* Is Symmetric BT.cpp */; };
 		E3FF97831CA7031400B78E30 /* Is BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF97821CA7031400B78E30 /* Is BST.cpp */; };
 		E3FF97851CA74B7D00B78E30 /* Print BST Keys in Given Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF97841CA74B7D00B78E30 /* Print BST Keys in Given Range.cpp */; };
@@ -325,11 +325,11 @@
 		E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Count Complete Binary Tree Nodes.cpp"; sourceTree = "<group>"; };
 		E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Permutation No Dup.cpp"; sourceTree = "<group>"; };
 		E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Nth Node From End of List.cpp"; sourceTree = "<group>"; };
+		E3DD848C1D9060720039D1DF /* Is Balanced BT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Balanced BT.cpp"; sourceTree = "<group>"; };
 		E3FDA13D1D6506230045DF75 /* Sort Algorithms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sort Algorithms"; sourceTree = "<group>"; };
 		E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bubble Sort.cpp"; sourceTree = "<group>"; };
 		E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Insertion Sort.cpp"; sourceTree = "<group>"; };
 		E3FF977C1CA6EB3300B78E30 /* Get Height of BT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Get Height of BT.cpp"; sourceTree = "<group>"; };
-		E3FF977E1CA6F01D00B78E30 /* is Balanced BT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "is Balanced BT.cpp"; sourceTree = "<group>"; };
 		E3FF97801CA6FE6800B78E30 /* Is Symmetric BT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Symmetric BT.cpp"; sourceTree = "<group>"; };
 		E3FF97821CA7031400B78E30 /* Is BST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is BST.cpp"; sourceTree = "<group>"; };
 		E3FF97841CA74B7D00B78E30 /* Print BST Keys in Given Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Print BST Keys in Given Range.cpp"; sourceTree = "<group>"; };
@@ -628,7 +628,6 @@
 				E33A59A31CB5755B00497735 /* Lowest Common Ancestor of K Nodes in BT.cpp */,
 				E388A6891CA2331700EC73EA /* Level Order Traverse Binary Tree.cpp */,
 				E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */,
-				E3FF977E1CA6F01D00B78E30 /* is Balanced BT.cpp */,
 				E3FF97801CA6FE6800B78E30 /* Is Symmetric BT.cpp */,
 				E3FF97891CA7582900B78E30 /* Identical Binary Tree.cpp */,
 				E3FF978B1CA759AE00B78E30 /* Tweaked Identical BInary Trees.cpp */,
@@ -641,6 +640,7 @@
 				E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */,
 				E350ACE91CD595C300DEE037 /* Graph Valid Tree.cpp */,
 				E350AD051CDA4BCB00DEE037 /* Border View of Binary Tree.cpp */,
+				E3DD848C1D9060720039D1DF /* Is Balanced BT.cpp */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -870,6 +870,7 @@
 				E37EFF761D4949B000B50582 /* First Missing Positive.cpp in Sources */,
 				E3FF978C1CA759AE00B78E30 /* Tweaked Identical BInary Trees.cpp in Sources */,
 				E3B159FB1CC6D45B005D0E22 /* 2Sum One pair Find Index Sorted Arr.cpp in Sources */,
+				E3DD848D1D9060720039D1DF /* Is Balanced BT.cpp in Sources */,
 				E3CDE6121CBEEE2F008C0F71 /* Cousins in Binary Tree.cpp in Sources */,
 				E37EFF681D4859C600B50582 /* Minimum Path Sum.cpp in Sources */,
 				E3B159FF1CC73012005D0E22 /* 3Sum All Pair Find Value.cpp in Sources */,
@@ -884,7 +885,6 @@
 				E37EFF8B1D5A79CF00B50582 /* Kth Smallest Element in a BST.cpp in Sources */,
 				E3AC0D951D419E5E00CE7A16 /* Search in Rotated Sorted Array.cpp in Sources */,
 				E3AC0D891D3F03AE00CE7A16 /* 3Sum Closest.cpp in Sources */,
-				E3FF977F1CA6F01D00B78E30 /* is Balanced BT.cpp in Sources */,
 				E33370191CB356E900728057 /* String replace (short to long).cpp in Sources */,
 				E3B159FD1CC72A89005D0E22 /* 2Sum All Pair Find Value.cpp in Sources */,
 				E33A59C81CB80B3D00497735 /* Remove Node from BST.cpp in Sources */,
