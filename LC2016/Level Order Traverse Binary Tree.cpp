@@ -9,11 +9,11 @@
 /*
  Get the list of list of keys in a given binary tree layer by layer. Each layer is represented by a list of keys and the keys are traversed from left to right.
  Examples
- 5
- /    \
- 3        8
- /   \        \
- 1     4        11
+        5
+     /    \
+    3       8
+  /   \      \
+ 1     4       11
  the result is [ [5], [3, 8], [1, 4, 11] ]
  Corner Cases
  What if the binary tree is null? Return an empty list of list in this case
@@ -68,21 +68,21 @@ vector<vector<int>> get_keys_byLevel(BinaryTreeNode* root){
     vector<vector<int>> res;
     if(root == NULL) return res;
     
-    queue<BinaryTreeNode*> eachLevel;
-    vector<int> temp;
-    eachLevel.push(root);
+    queue<BinaryTreeNode*> qu;
+    vector<int> level;
+    qu.push(root);
     
-    while(!eachLevel.empty()){
-        int len = eachLevel.size();
+    while(!qu.empty()){
+        int len = qu.size();
         for(int i = 0; i<len; ++i){
-            BinaryTreeNode* cur = eachLevel.front();
-            temp.push_back(cur->val);
-            eachLevel.pop();
-            if(cur->left) eachLevel.push(cur->left);
-            if(cur->right) eachLevel.push(cur->right);
+            BinaryTreeNode* cur = qu.front();
+            level.push_back(cur->val);
+            qu.pop();
+            if(cur->left) qu.push(cur->left);
+            if(cur->right) qu.push(cur->right);
         }
-        res.push_back(temp);
-        temp.clear();
+        res.push_back(level);
+        level.clear();
     }
     
     return res;
