@@ -37,6 +37,41 @@ using namespace std;
  }
  
  */
+
+/*
+ Breadth First Search
+ as container, only queue is first in first out, which mean it could keep the nodes visiting order
+ so we use queue to contain current level's nodes
+ since we need to seperate different levels, so we need to mark the current queue's size
+ 
+ Time O(N), space O(N)
+ */
+vector<vector<int>> get_keys_byLevel(BinaryTreeNode* root){
+    vector<vector<int>> res;
+    if(root == NULL) return res;
+
+    queue<BinaryTreeNode*> qu;
+    vector<int> level;
+    qu.push(root);
+
+    while(!qu.empty()){
+        int len = qu.size();
+        for(int i = 0; i<len; ++i){
+            BinaryTreeNode* cur = qu.front();
+            level.push_back(cur->val);
+            qu.pop();
+            if(cur->left) qu.push(cur->left);
+            if(cur->right) qu.push(cur->right);
+        }
+        res.push_back(level);
+        level.clear();
+    }
+
+    return res;
+}
+
+
+
 void print_keys_level_by_level(BinaryTreeNode* root){
     if(root == NULL){
         return;
@@ -64,29 +99,6 @@ void print_keys_level_by_level(BinaryTreeNode* root){
     cout << endl;
 }
 
-vector<vector<int>> get_keys_byLevel(BinaryTreeNode* root){
-    vector<vector<int>> res;
-    if(root == NULL) return res;
-    
-    queue<BinaryTreeNode*> qu;
-    vector<int> level;
-    qu.push(root);
-    
-    while(!qu.empty()){
-        int len = qu.size();
-        for(int i = 0; i<len; ++i){
-            BinaryTreeNode* cur = qu.front();
-            level.push_back(cur->val);
-            qu.pop();
-            if(cur->left) qu.push(cur->left);
-            if(cur->right) qu.push(cur->right);
-        }
-        res.push_back(level);
-        level.clear();
-    }
-    
-    return res;
-}
 
 /*
 int main(){
