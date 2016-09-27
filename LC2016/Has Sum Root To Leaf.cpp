@@ -11,19 +11,34 @@
  
  For example:
  Given the below binary tree and sum = 22,
- 5
- / \
- 4   8
- /   / \
- 11  13  4
- /  \      \
- 7    2      1
+        5
+       / \
+      4   8
+     /   / \
+    11  13  4
+   /  \      \
+  7    2      1
  return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
  */
 
 #include "BinaryTree.h"
 #include <iostream>
 using namespace std;
+
+/*
+ DFS pre order traverse the tree from root to leaf.
+ collect each node's value along the way (from root to leaf)
+ when we reach to the leaf node, if current added result is equal to sum, then return true.
+ else, we use DFS to continue pre order traverse other nodes.
+ 
+ NOTE: 
+ on the same level, our prefix sum is the same.
+ eg, for node 11, when we traverse to node 7, sum = prefix + 11 + 7
+     when this way doesn't work, we go back to upper level (node 11) and start to traverse to node 2, sum = prefix + 11 + 2
+ 
+ Time O(N)
+ Space O(N) (recursion use stack space)
+ */
 
 void helper_hasPath(BinaryTreeNode* root, int sum, int prefix, bool& res);
 
@@ -40,9 +55,10 @@ void helper_hasPath(BinaryTreeNode* root, int sum, int prefix, bool& res){
     if(root->left == NULL && root->right == NULL){
         if(prefix + root->val == sum){
             res = true;
+            return;
         }
     }
     
     helper_hasPath(root->left, sum, prefix+root->val, res);
-    helper_hasPath(root->right, sum, prefix+root->val, res);
+    helper_hasPath(root->right, sum, prefix+root->val, res); // on this level, prefix doesn't change
 }
