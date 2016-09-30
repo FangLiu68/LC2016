@@ -59,7 +59,7 @@ ListNode* reverseLinkedListRecur(ListNode* head){
     return newHead;
 }
 
-
+/*
 int main(){
     ListNode* head = new ListNode(1);
     ListNode* node2 = new ListNode(2);
@@ -73,4 +73,4 @@ int main(){
         res = res->next;
     }
     return 0;
-}
+}*/

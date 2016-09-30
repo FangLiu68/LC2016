@@ -52,3 +52,11 @@ int numOfWays(vector<int> input, int target){
 
     return res;
 }
+
+/*
+int main(){
+    vector<int> input = {5,4,9,2,2,7,1,1,12,-2,3};
+    int target = 13;
+    cout << numOfWays(input, target) << endl;
+    return 0;
+}*/

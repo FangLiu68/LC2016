@@ -166,6 +166,7 @@
 		E3CDE6271CC554A7008C0F71 /* Permutation No Dup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */; };
 		E3DD84871D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */; };
 		E3DD848F1D9062410039D1DF /* Is Balanced BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */; };
+		E3DEC3161D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DEC3151D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp */; };
 		E3FDA13F1D650B6E0045DF75 /* Bubble Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */; };
 		E3FDA1411D6517BD0045DF75 /* Insertion Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */; };
 		E3FF977D1CA6EB3300B78E30 /* Get Height of BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF977C1CA6EB3300B78E30 /* Get Height of BT.cpp */; };
@@ -352,6 +353,7 @@
 		E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Permutation No Dup.cpp"; sourceTree = "<group>"; };
 		E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Nth Node From End of List.cpp"; sourceTree = "<group>"; };
 		E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Balanced BT.cpp"; sourceTree = "<group>"; };
+		E3DEC3151D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Binary Tree Maximum Path Sum.cpp"; sourceTree = "<group>"; };
 		E3FDA13D1D6506230045DF75 /* Sort Algorithms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sort Algorithms"; sourceTree = "<group>"; };
 		E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bubble Sort.cpp"; sourceTree = "<group>"; };
 		E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Insertion Sort.cpp"; sourceTree = "<group>"; };
@@ -544,6 +546,7 @@
 				9774C6421D8DC77B005BBAE8 /* Number of Valid Brackets Expressions.cpp */,
 				9774C64A1D8F006A005BBAE8 /* Segment Tree.cpp */,
 				977BCE6C1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp */,
+				E3DEC3141D9B3DB8001D8D9B /* Intervals */,
 			);
 			name = EXTRA;
 			sourceTree = "<group>";
@@ -736,6 +739,7 @@
 				E3CDE6061CBE8AA5008C0F71 /* Longest Distance Leaf to Leaf.cpp */,
 				E3CDE6081CBE937F008C0F71 /* Has Sum Root To Leaf.cpp */,
 				E3CDE60A1CBE93E7008C0F71 /* Find Sum Root To Leaf.cpp */,
+				E3DEC3151D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp */,
 			);
 			name = "Path Sum";
 			sourceTree = "<group>";
@@ -749,6 +753,13 @@
 				E3CDE6261CC554A7008C0F71 /* Permutation No Dup.cpp */,
 			);
 			name = DFS;
+			sourceTree = "<group>";
+		};
+		E3DEC3141D9B3DB8001D8D9B /* Intervals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Intervals;
 			sourceTree = "<group>";
 		};
 		E3FF97861CA7537400B78E30 /* Heap */ = {
@@ -913,6 +924,7 @@
 				E37EFF801D498BC400B50582 /* Intersection of Two Arrays.cpp in Sources */,
 				E3CDE6271CC554A7008C0F71 /* Permutation No Dup.cpp in Sources */,
 				E33A59BD1CB6F40000497735 /* Merge K Sorted Arr.cpp in Sources */,
+				E3DEC3161D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp in Sources */,
 				977BCE651D96193C00AE313F /* preOrder Traverse.cpp in Sources */,
 				E33A59A01CB573A300497735 /* Lowest Common Ancestor of BST.cpp in Sources */,
 				E3CDE61B1CC1439D008C0F71 /* Num of Valid Parentheses.cpp in Sources */,

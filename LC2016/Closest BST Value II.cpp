@@ -21,25 +21,6 @@
 #include <vector>
 using namespace std;
 
-vector<int> inOrder_iter(BinaryTreeNode* root){
-    vector<int> res;
-    if(root == NULL) return res;
-    stack<BinaryTreeNode*> stk;
-    BinaryTreeNode* cur = root;
-    while(cur || !stk.empty()){
-        if(cur){
-            stk.push(cur);
-            cur = cur->left;
-        }else{
-            BinaryTreeNode* tmp = stk.top();
-            stk.pop();
-            res.push_back(tmp->val);
-            cur = tmp->right;
-        }
-    }
-    return res;
-}
-
 
 queue<int> closest_BST_value(BinaryTreeNode* root, int k){
     queue<int> res;
