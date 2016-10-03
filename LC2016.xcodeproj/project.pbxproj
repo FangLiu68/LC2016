@@ -167,6 +167,7 @@
 		E3DD84871D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */; };
 		E3DD848F1D9062410039D1DF /* Is Balanced BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */; };
 		E3DEC3161D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DEC3151D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp */; };
+		E3DEC3181D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */; };
 		E3FDA13F1D650B6E0045DF75 /* Bubble Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */; };
 		E3FDA1411D6517BD0045DF75 /* Insertion Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */; };
 		E3FF977D1CA6EB3300B78E30 /* Get Height of BT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3FF977C1CA6EB3300B78E30 /* Get Height of BT.cpp */; };
@@ -354,6 +355,7 @@
 		E3DD84861D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Nth Node From End of List.cpp"; sourceTree = "<group>"; };
 		E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Balanced BT.cpp"; sourceTree = "<group>"; };
 		E3DEC3151D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Binary Tree Maximum Path Sum.cpp"; sourceTree = "<group>"; };
+		E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Max Depth of Binary Tree.cpp"; sourceTree = "<group>"; };
 		E3FDA13D1D6506230045DF75 /* Sort Algorithms */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sort Algorithms"; sourceTree = "<group>"; };
 		E3FDA13E1D650B6E0045DF75 /* Bubble Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Bubble Sort.cpp"; sourceTree = "<group>"; };
 		E3FDA1401D6517BD0045DF75 /* Insertion Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Insertion Sort.cpp"; sourceTree = "<group>"; };
@@ -692,6 +694,7 @@
 				E350AD051CDA4BCB00DEE037 /* Border View of Binary Tree.cpp */,
 				E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */,
 				977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */,
+				E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -972,6 +975,7 @@
 				E33370171CB3387200728057 /* Shift Word.cpp in Sources */,
 				E33A59B41CB6BE3F00497735 /* Largest and Second Largest Num.cpp in Sources */,
 				E33A59C41CB7234700497735 /* Closest Num in BST.cpp in Sources */,
+				E3DEC3181D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp in Sources */,
 				E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */,
 				E350AD061CDA4BCB00DEE037 /* Border View of Binary Tree.cpp in Sources */,
 				E388A67E1CA215A300EC73EA /* Selection Sort Array.cpp in Sources */,
