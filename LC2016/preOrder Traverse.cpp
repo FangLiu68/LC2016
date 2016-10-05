@@ -14,11 +14,11 @@ using namespace std;
 /*
  Implement an iterative, pre-order traversal of a given binary tree, return the list of keys of each node in the tree as it is pre-order traversed.
  Examples
- 5
- /    \
- 3        8
- /   \        \
- 1      4        11
+            5
+        /    \
+      3        8
+    /   \        \
+  1      4        11
 
  Pre-order traversal is [5, 3, 1, 4, 8, 11]
  Corner Cases
@@ -43,6 +43,10 @@ using namespace std;
  7                                                  7
  */
 
+/*
+ iteration 和 recursion的方法都是push stack一次，pop stack一次，每个点执行两次操作。
+ 所以time complexity O(N)
+ */
 vector<int> pre_order_iter(BinaryTreeNode* root) {
     vector<int> res;
     if(root == NULL) return res;

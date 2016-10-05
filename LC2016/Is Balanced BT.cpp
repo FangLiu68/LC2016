@@ -16,15 +16,16 @@
 #include "BinaryTree.h"
 
 /*
- 10  root (2 times getHeight n/2 + n/2)-->O(n)
- /                  \
- 5(2 times getHeight  n/2)       15(n/2)  -->O(n)
- /               \               /   \
+                    10  root                            (2 times getHeight n/2 + n/2)-->O(n)
+            /                           \
+     5(2 times getHeight  n/2)       15(n/2)            -->O(n)
+   /               \                /   \
  3(N/4)             9(N/4)     12(N/4)  20(N/4)
  total level = log(n) level
  for each level   O(n)
  So, the total time complexity = O(nlog(n))
  对每一个node T来说，getHeight(T)的复杂度是以T为根节点的所有子节点的个数
+ 
  例如：
  对根节点10来说，getHeight(10)=getHeight(5)+getHeight(15)
  假设整个树一共有N个node，假设说是完全二叉树，那么10的左子树一共有N/2个node, 右子树有N/2个Node，
