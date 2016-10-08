@@ -21,23 +21,6 @@
      5(2 times getHeight  n/2)       15(n/2)            -->O(n)
    /               \                /   \
  3(N/4)             9(N/4)     12(N/4)  20(N/4)
- total level = log(n) level
- for each level   O(n)
- So, the total time complexity = O(nlog(n))
- 对每一个node T来说，getHeight(T)的复杂度是以T为根节点的所有子节点的个数
- 
- 例如：
- 对根节点10来说，getHeight(10)=getHeight(5)+getHeight(15)
- 假设整个树一共有N个node，假设说是完全二叉树，那么10的左子树一共有N/2个node, 右子树有N/2个Node，
- 那么第一行对getHeight(10)的BIGO是N/2+N/2 = N
- 第二行对节点5来说，getHeight(5) = getHeight(3)+getHeight(9)
- 同样，由于3和9都各自拥有N/4个node的subtree，所以getHeight(3)和getHeight(9)各自的复杂度都是N/4，所以getHeight(5)的复杂度是N/2
- 所以5的兄弟getHeight(15)的复杂度也是N/2
- 那么第二行一共的getHeight的复杂度为：getHeight(5)+getHeight(15) = N/2 + N/2 = N
- ....
- 每一行的所有getHeight的复杂度一共是N
- 整个树一共有logN行
- 所以isBlanced(root)这种算法的复杂度一共是NlogN
  */
 
 // time complexity O(N)
@@ -53,7 +36,31 @@ int helper_getHeight(BinaryTreeNode* root){
     return max(left, right) + 1;
 }
 
-// each node, we have to find its height O(N), totally logN level, so time O(NlogN)
+/*
+ isBalancedBT的时间复杂度分析：
+ 大框架：isBalancedBT(root) recursively 调用自身两次isBalancedBT(root->left) 和 isBalancedBT(root->right)
+ 每次调用自身时，同时getHeight(root->left)，和 getHeight(root->right)
+ recursively call自身的每次，都是triger程序的执行，我们可以把isBalancedBT(root->left)和isBalancedBT(root->right)的复杂度认为是1
+ 我们只需要知道，每次recursively call的时候，getHeight()执行了几次，执行的时间复杂度
+ getHeight(node K)的时间复杂度是，以node K为根节点的子树的大小
+ 
+ 假设，以10为根节点的，整个tree的节点数目是N
+ time: isBalanced(10) = getHeight(5)+getHeight(15)
+ getHeight(5) use time O(N/2)
+ getHeight(15) use time O(N/2)
+ 所以对于第一层10来说，time = O(N/2) + O(N/2) = O(N) + O(N) = O(N)
+ 
+ 对于第二层来说
+ time: isBalanced(5) = getHeight(3) + getHeight(9)
+ getHeight(3) use time O(N/4)
+ getHeight(9) use time O(N/4)
+ isBalanced(5) use time O(N/4) + O(N/4) = O(N)
+ same as node 15
+ so, the second level time is also O(N)
+ 
+ and for a balanced binary tree, the level is logN
+ so totally we use time O(NlogN)
+ */
 bool isBalancedBT(BinaryTreeNode* root){
     if(root == NULL){
         return true;
