@@ -18,6 +18,50 @@
 #include <iostream>
 using namespace std;
 
+/*
+ 1. left subtree height == right subtree height
+    a. left subtree is full
+    b. do recursion on right subtree
+ 2. left subtree height != right subtree height
+    a. right subtree is full
+    b. do recursion on left subtree
+ NOTE: 1 << n 意思是2的n次方
+ 总节点数 = 
+        1（根节点数）+
+        2^h-1 (full subtree节点数，h为full subtree高度，h从1开始) +
+        recursion
+ time:
+    1. only go left or right. => traverse logN
+    2. calculate depth every time => logN
+    => total time O((logN)^2)
+ space:
+    logN for recursion stack use
+ */
+
+int get_depth(BinaryTreeNode* root);
+int countNodes(BinaryTreeNode* root) {
+    if(root == NULL) return 0;
+    int left_depth = get_depth(root->left);
+    int right_depth = get_depth(root->right);
+    if(left_depth == 0) return 1;
+    if(left_depth == right_depth){
+        return 1 + (1<<left_depth)-1 + countNodes(root->right);
+    }else{
+        return 1 + (1<<right_depth)-1 + countNodes(root->left);
+    }
+}
+
+int get_depth(BinaryTreeNode* root){
+    int res = 0;
+    while(root){
+        res++;
+        root = root->left;
+    }
+    return res;
+}
+
+
+//=======================================================
 int left_height(BinaryTreeNode* root){
     int res = 0;
     while(root){
@@ -36,7 +80,7 @@ int right_height(BinaryTreeNode* root){
     return res;
 }
 
-int countNodes(BinaryTreeNode* root){
+int countNodesI(BinaryTreeNode* root){
     if(root == NULL) return 0;
     
     int left = left_height(root);
@@ -45,6 +89,13 @@ int countNodes(BinaryTreeNode* root){
     if(left == right){
         return (1 << left) - 1;
     }else{
-        return countNodes(root->left) + countNodes(root->right) + 1;
+        return countNodesI(root->left) + countNodesI(root->right) + 1;
     }
 }
+/*
+int main(){
+    int res = 1 << 1;
+    cout << res << endl;
+    return 0;
+}
+*/

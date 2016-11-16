@@ -30,33 +30,70 @@
 #include <vector>
 using namespace std;
 
-void helper_pathSum(BinaryTreeNode* root, int sum, vector<int> temp, vector<vector<int>>& res);
-
+/*
+Method 1:
+Use container to store the nodes we visited along path, and check the sum when we reach leaf node.
+Time O(N)
+Space O(N)
+*/
+void pathSum_helper(BinaryTreeNode* root, int sum, vector<int>& path, vector<vector<int>>& res);
 vector<vector<int>> pathSum(BinaryTreeNode* root, int sum) {
-    vector<int> temp;
     vector<vector<int>> res;
-    helper_pathSum(root, sum, temp, res);
+    vector<int> path;
+    if(root == NULL) return res;
+    pathSum_helper(root, sum, path, res);
     return res;
 }
 
-void helper_pathSum(BinaryTreeNode* root, int sum, vector<int> temp, vector<vector<int>>& res){
-    if(root == NULL){
+void pathSum_helper(BinaryTreeNode* root, int sum, vector<int>& path, vector<vector<int>>& res){
+    if(root == NULL) return;
+    if(root->left == NULL && root->right == NULL){
+        path.push_back(root->val);
+        int cur = 0;
+        for(int i=0; i<path.size(); ++i){
+            cur += path[i];
+        }
+        if(cur == sum){
+            res.push_back(path);
+        }
+        path.pop_back();
         return;
     }
     
-    temp.push_back(root->val);
+    path.push_back(root->val);
+    pathSum_helper(root->left, sum, path, res);
+    pathSum_helper(root->right, sum, path, res);
+    path.pop_back();
+}
+
+/*
+Method 2:
+Instead we add all nodes value in container, we minus the node’s value along the path when we do DFS. this could save some time.
+Time O(N)
+Space O(N)
+*/
+void pathSum_helperI(BinaryTreeNode* root, int sum, vector<int>& path, vector<vector<int>>& res);
+vector<vector<int>> pathSumI(BinaryTreeNode* root, int sum) {
+    vector<vector<int>> res;
+    vector<int> path;
+    if(root == NULL) return res;
+    pathSum_helper(root, sum, path, res);
+    return res;
+}
+
+void pathSum_helperI(BinaryTreeNode* root, int sum, vector<int>& path, vector<vector<int>>& res){
+    if(root == NULL) return;
     if(root->left == NULL && root->right == NULL){
-        int path_sum = 0;
-        for(int i=0; i<temp.size(); ++i){
-            path_sum = path_sum + temp[i];
+        path.push_back(root->val);
+        if(root->val == sum){
+            res.push_back(path);
         }
-        if(path_sum == sum){
-            res.push_back(temp);
-        }
+        path.pop_back();
+        return;
     }
     
-    helper_pathSum(root->left, sum, temp, res);
-    helper_pathSum(root->right, sum, temp, res);
-    
-    temp.pop_back();
+    path.push_back(root->val);
+    pathSum_helperI(root->left, sum-root->val, path, res);
+    pathSum_helperI(root->right, sum-root->val, path, res);
+    path.pop_back();
 }

@@ -38,6 +38,13 @@
  2     3
  /
  4
+ 
+ 例子：
+            5
+        /       \
+       3         9
+     /   \         \
+    1     4         6
  */
 
 #include "BinaryTree.h"
@@ -45,7 +52,55 @@
 #include <queue>
 using namespace std;
 
+/*
+ find the first node without both children.
+ after that node, none of the nodes should have any child.
+ 
+ flag = false; // find first node without both children
+ 
+ left child
+ if without left child: flag = true
+ else: with left child
+ if flag = true: not complete
+ 
+ right child
+ if without left child: flag = true
+ else: with left child
+ if flag = true: not complete
+ 
+ qu:
+ 5
+ 3 9
+ 1 null 6 null
+ */
+
 bool is_completeBT(BinaryTreeNode* root){
+    if(root == NULL){
+        return true;
+    }
+    
+    queue<BinaryTreeNode*> qu;
+    qu.push(root);
+    
+    // use a flag to indicate if we found teh first node that doesn't have both children
+    bool flag = false;
+    while(!qu.empty()){
+        BinaryTreeNode* cur = qu.front();
+        if(cur){
+            if(flag == true){
+                return false;
+            }
+            qu.push(cur->left);
+            qu.push(cur->right);
+        }else{
+            flag = true;
+        }
+    }
+    
+    return true;
+}
+
+bool is_completeBT1(BinaryTreeNode* root){
     if(root == NULL){
         return true;
     }

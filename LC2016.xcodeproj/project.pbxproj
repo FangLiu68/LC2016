@@ -123,6 +123,7 @@
 		E388A69F1CA5A8F000EC73EA /* Reorder Linked List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E388A69E1CA5A8F000EC73EA /* Reorder Linked List.cpp */; };
 		E388A6A11CA5A8FD00EC73EA /* Partition List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E388A6A01CA5A8FD00EC73EA /* Partition List.cpp */; };
 		E388A6A31CA5A91900EC73EA /* Tree Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */; };
+		E3950A031DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3950A021DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp */; };
 		E3AC0D801D3C871C00CE7A16 /* Largest SubArray Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */; };
 		E3AC0D821D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */; };
 		E3AC0D841D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */; };
@@ -139,6 +140,7 @@
 		E3B159FB1CC6D45B005D0E22 /* 2Sum One pair Find Index Sorted Arr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B159FA1CC6D45B005D0E22 /* 2Sum One pair Find Index Sorted Arr.cpp */; };
 		E3B159FD1CC72A89005D0E22 /* 2Sum All Pair Find Value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B159FC1CC72A89005D0E22 /* 2Sum All Pair Find Value.cpp */; };
 		E3B159FF1CC73012005D0E22 /* 3Sum All Pair Find Value.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B159FE1CC73012005D0E22 /* 3Sum All Pair Find Value.cpp */; };
+		E3B23A461DADBE8100EE1EFE /* Binary Tree Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B23A451DADBE8100EE1EFE /* Binary Tree Paths.cpp */; };
 		E3B514941D67D57A0078F1BC /* Min Races.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B514931D67D57A0078F1BC /* Min Races.cpp */; };
 		E3CB9EAB1CA0C7D100CD17B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EAA1CA0C7D100CD17B6 /* main.cpp */; };
 		E3CB9EB81CA0CE1600CD17B6 /* Classic Binary Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EB71CA0CE1600CD17B6 /* Classic Binary Search.cpp */; };
@@ -310,6 +312,7 @@
 		E388A69E1CA5A8F000EC73EA /* Reorder Linked List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Reorder Linked List.cpp"; sourceTree = "<group>"; };
 		E388A6A01CA5A8FD00EC73EA /* Partition List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Partition List.cpp"; sourceTree = "<group>"; };
 		E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Tree Traversal.cpp"; sourceTree = "<group>"; };
+		E3950A021DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Trailing Zero Nodes.cpp"; sourceTree = "<group>"; };
 		E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Largest SubArray Sum.cpp"; sourceTree = "<group>"; };
 		E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Increasing SubArray.cpp"; sourceTree = "<group>"; };
 		E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Increasing SubSequence.cpp"; sourceTree = "<group>"; };
@@ -326,6 +329,7 @@
 		E3B159FA1CC6D45B005D0E22 /* 2Sum One pair Find Index Sorted Arr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "2Sum One pair Find Index Sorted Arr.cpp"; sourceTree = "<group>"; };
 		E3B159FC1CC72A89005D0E22 /* 2Sum All Pair Find Value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "2Sum All Pair Find Value.cpp"; sourceTree = "<group>"; };
 		E3B159FE1CC73012005D0E22 /* 3Sum All Pair Find Value.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "3Sum All Pair Find Value.cpp"; sourceTree = "<group>"; };
+		E3B23A451DADBE8100EE1EFE /* Binary Tree Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Binary Tree Paths.cpp"; sourceTree = "<group>"; };
 		E3B514931D67D57A0078F1BC /* Min Races.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Min Races.cpp"; sourceTree = "<group>"; };
 		E3CB9EA71CA0C7D100CD17B6 /* LC2016 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LC2016; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CB9EAA1CA0C7D100CD17B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -695,6 +699,8 @@
 				E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */,
 				977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */,
 				E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */,
+				E3B23A451DADBE8100EE1EFE /* Binary Tree Paths.cpp */,
+				E3950A021DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp */,
 			);
 			name = Tree;
 			sourceTree = "<group>";
@@ -919,6 +925,7 @@
 				E3FF97831CA7031400B78E30 /* Is BST.cpp in Sources */,
 				E33A59A21CB5754900497735 /* Lowest Common Ancestor has Parent.cpp in Sources */,
 				E388A69D1CA5A6D400EC73EA /* Merge Two Lists Alternatively.cpp in Sources */,
+				E3950A031DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp in Sources */,
 				E333700F1CB2D2D500728057 /* Repeatly Dedup Adj Elems.cpp in Sources */,
 				E33A59A91CB5B01E00497735 /* Remove Dup in Sorted Arr Keep One.cpp in Sources */,
 				E3336FED1CB0CE6E00728057 /* Common Nums in 2 Sorted Arr.cpp in Sources */,
@@ -942,6 +949,7 @@
 				E33370111CB3097300728057 /* Strstr.cpp in Sources */,
 				E37EFF761D4949B000B50582 /* First Missing Positive.cpp in Sources */,
 				E3FF978C1CA759AE00B78E30 /* Tweaked Identical BInary Trees.cpp in Sources */,
+				E3B23A461DADBE8100EE1EFE /* Binary Tree Paths.cpp in Sources */,
 				9774C6491D8DCBB0005BBAE8 /* Valid Parentheses.cpp in Sources */,
 				E3B159FB1CC6D45B005D0E22 /* 2Sum One pair Find Index Sorted Arr.cpp in Sources */,
 				E3CDE6121CBEEE2F008C0F71 /* Cousins in Binary Tree.cpp in Sources */,

@@ -80,7 +80,7 @@ vector<vector<int>> permute(vector<int>& input){
     findPermutations(input, used, per, allPer);
     return allPer;
 }
-/*
+
 int main(){
     string input = "abc";
     vector<string> res = permutationNoDup(input);
@@ -88,4 +88,4 @@ int main(){
         cout << res[i] << " ";
     }cout << endl;
     return 0;
-}*/
+}

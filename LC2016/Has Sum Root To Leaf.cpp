@@ -23,6 +23,7 @@
 
 #include "BinaryTree.h"
 #include <iostream>
+#include <vector>
 using namespace std;
 
 /*
@@ -40,9 +41,19 @@ using namespace std;
  Space O(N) (recursion use stack space)
  */
 
+bool hasPathSum(BinaryTreeNode* root, int sum) {
+    if(root == NULL) return false;
+    if(root->val == sum && root->left == NULL && root->right == NULL){
+        return true;
+    }
+    return hasPathSum(root->left, sum-root->val) || hasPathSum(root->right, sum-root->val);
+}
+
+
+//======================================
 void helper_hasPath(BinaryTreeNode* root, int sum, int prefix, bool& res);
 
-bool hasPathSum(BinaryTreeNode* root, int sum) {
+bool hasPathSumI(BinaryTreeNode* root, int sum) {
     if(root == NULL) return false;
     bool res = false;
     helper_hasPath(root, sum, 0, res);
@@ -50,6 +61,7 @@ bool hasPathSum(BinaryTreeNode* root, int sum) {
 }
 
 void helper_hasPath(BinaryTreeNode* root, int sum, int prefix, bool& res){
+    if(res == true) return;
     if(root == NULL) return;
     
     if(root->left == NULL && root->right == NULL){
@@ -61,4 +73,42 @@ void helper_hasPath(BinaryTreeNode* root, int sum, int prefix, bool& res){
     
     helper_hasPath(root->left, sum, prefix+root->val, res);
     helper_hasPath(root->right, sum, prefix+root->val, res); // on this level, prefix doesn't change
+}
+
+//========================
+void helper(BinaryTreeNode* root, vector<int>& path, int sum, bool& res);
+bool hasPathSumII(BinaryTreeNode* root, int sum) {
+    if(root == NULL) return false;
+    vector<int> path;
+    bool res = false;
+    helper(root, path, sum, res);
+    return res;
+}
+
+void helper(BinaryTreeNode* root, vector<int>& path, int sum, bool& res){
+    if(res == true){
+        return;
+    }
+    if(root == NULL){
+        return;
+    }
+    if(root->left==NULL && root->right==NULL){
+        path.push_back(root->val);
+        int cur = 0;
+        for(int i=0; i<path.size(); ++i){
+            cur += path[i];
+        }
+        if(cur == sum){
+            res = true;
+            return;
+        }else{
+            path.pop_back();
+            return;
+        }
+    }
+    
+    path.push_back(root->val);
+    helper(root->left,path, sum, res);
+    helper(root->right, path, sum, res);
+    path.pop_back();
 }

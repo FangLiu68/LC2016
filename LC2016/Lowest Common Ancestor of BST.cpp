@@ -13,6 +13,7 @@
 using namespace std;
 
 // 既然是BST，我们就可以利用值的大小关系来做
+// 每次访问node个数减半，time O(logN)
 BinaryTreeNode* LCA_BST(BinaryTreeNode* root, BinaryTreeNode* a, BinaryTreeNode* b){
     // base case
     if(root == NULL){
