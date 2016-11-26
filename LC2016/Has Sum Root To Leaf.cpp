@@ -41,12 +41,15 @@ using namespace std;
  Space O(N) (recursion use stack space)
  */
 
+// we don't need to record the path
 bool hasPathSum(BinaryTreeNode* root, int sum) {
     if(root == NULL) return false;
     if(root->val == sum && root->left == NULL && root->right == NULL){
         return true;
     }
-    return hasPathSum(root->left, sum-root->val) || hasPathSum(root->right, sum-root->val);
+    int left = hasPathSum(root->left, sum - root->val);
+    int right = hasPathSum(root->right, sum - root->val);
+    return left || right;
 }
 
 
