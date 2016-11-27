@@ -103,24 +103,24 @@ int isBalancedBT_fast(BinaryTreeNode* root){
 }
 
 /*
- int main(){
- BinaryTreeNode* root = new BinaryTreeNode(1);
- BinaryTreeNode* node2 = new BinaryTreeNode(2);
- BinaryTreeNode* node3 = new BinaryTreeNode(3);
- BinaryTreeNode* node4 = new BinaryTreeNode(4);
- BinaryTreeNode* node5 = new BinaryTreeNode(5);
- BinaryTreeNode* node6 = new BinaryTreeNode(6);
- root->left = node2;
- root->right = node3;
- node2->left = node4;
- node3->right = node6;
- node4->right = node5;
- 
- if(isBalancedBT_fast(root)){
- cout << 1 << endl;
- }else{
- cout << 0 << endl;
- }
- 
- return 0;
- }*/
+int main(){
+    BinaryTreeNode* root = new BinaryTreeNode(1);
+    BinaryTreeNode* node2 = new BinaryTreeNode(2);
+    BinaryTreeNode* node3 = new BinaryTreeNode(3);
+    BinaryTreeNode* node4 = new BinaryTreeNode(4);
+    BinaryTreeNode* node5 = new BinaryTreeNode(5);
+    BinaryTreeNode* node6 = new BinaryTreeNode(6);
+    root->left = node2;
+    root->right = node3;
+    node2->left = node4;
+    node3->right = node6;
+    node4->right = node5;
+
+    if(isBalancedBT_fast(root)){
+        cout << 1 << endl;
+    }else{
+        cout << 0 << endl;
+    }
+    
+    return 0;
+}*/

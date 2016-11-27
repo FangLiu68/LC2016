@@ -22,6 +22,7 @@
 		977BCE691D961CFA00AE313F /* inOrder Traverse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977BCE681D961CFA00AE313F /* inOrder Traverse.cpp */; };
 		977BCE6B1D96273200AE313F /* Closest BST Value II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */; };
 		977BCE6D1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977BCE6C1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp */; };
+		97BC97EA1DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */; };
 		E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */; };
 		E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */; };
 		E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */; };
@@ -211,6 +212,7 @@
 		977BCE681D961CFA00AE313F /* inOrder Traverse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "inOrder Traverse.cpp"; sourceTree = "<group>"; };
 		977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Closest BST Value II.cpp"; sourceTree = "<group>"; };
 		977BCE6C1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Num of Subseq Sum to K.cpp"; sourceTree = "<group>"; };
+		97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Min Depth of Binay Tree.cpp"; sourceTree = "<group>"; };
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
@@ -395,6 +397,17 @@
 				977BCE681D961CFA00AE313F /* inOrder Traverse.cpp */,
 			);
 			name = "Tree Traversal";
+			sourceTree = "<group>";
+		};
+		97BC97E81DEA60B800568CD1 /* Basic Operations */ = {
+			isa = PBXGroup;
+			children = (
+				E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */,
+				E3CDE61C1CC172E2008C0F71 /* Is Complete Binary Tree.cpp */,
+				E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */,
+				97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */,
+			);
+			name = "Basic Operations";
 			sourceTree = "<group>";
 		};
 		E314ED051D5BD29600C05504 /* 2D */ = {
@@ -676,6 +689,7 @@
 			isa = PBXGroup;
 			children = (
 				E388A68B1CA2333700EC73EA /* BinaryTree.h */,
+				97BC97E81DEA60B800568CD1 /* Basic Operations */,
 				977BCE631D96190700AE313F /* Tree Traversal */,
 				E33A59C21CB722F400497735 /* Binary Search Tree */,
 				E3CDE5F31CBB12E1008C0F71 /* Path Sum */,
@@ -696,13 +710,10 @@
 				E3CDE6001CBE006C008C0F71 /* Right View Binary Tree.cpp */,
 				E3CDE6021CBE00B7008C0F71 /* Invert Binary Tree.cpp */,
 				E3CDE6111CBEEE2F008C0F71 /* Cousins in Binary Tree.cpp */,
-				E3CDE61C1CC172E2008C0F71 /* Is Complete Binary Tree.cpp */,
 				E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */,
 				E350ACE91CD595C300DEE037 /* Graph Valid Tree.cpp */,
 				E350AD051CDA4BCB00DEE037 /* Border View of Binary Tree.cpp */,
-				E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */,
 				977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */,
-				E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */,
 				E3B23A451DADBE8100EE1EFE /* Binary Tree Paths.cpp */,
 				E3950A021DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp */,
 				E33F93791DDD1E540070AB66 /* Binary Tree Level Order Traversal II.cpp */,
@@ -900,6 +911,7 @@
 				9774C64B1D8F006A005BBAE8 /* Segment Tree.cpp in Sources */,
 				E33370231CB44E9100728057 /* Decompress Str II.cpp in Sources */,
 				E388A6A11CA5A8FD00EC73EA /* Partition List.cpp in Sources */,
+				97BC97EA1DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp in Sources */,
 				9774C6471D8DCAC1005BBAE8 /* Implement Queue using Stacks.cpp in Sources */,
 				E33A59B21CB6BDFE00497735 /* Largest and Smallest Num.cpp in Sources */,
 				E388A6991CA59D7700EC73EA /* Insert in Sorted List.cpp in Sources */,
