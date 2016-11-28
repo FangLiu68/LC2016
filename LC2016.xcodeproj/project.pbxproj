@@ -213,6 +213,7 @@
 		977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Closest BST Value II.cpp"; sourceTree = "<group>"; };
 		977BCE6C1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Num of Subseq Sum to K.cpp"; sourceTree = "<group>"; };
 		97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Min Depth of Binay Tree.cpp"; sourceTree = "<group>"; };
+		97BC97EC1DEBB41800568CD1 /* dp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dp.h; sourceTree = "<group>"; };
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
@@ -392,9 +393,12 @@
 		977BCE631D96190700AE313F /* Tree Traversal */ = {
 			isa = PBXGroup;
 			children = (
+				E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */,
 				977BCE641D96193C00AE313F /* preOrder Traverse.cpp */,
 				977BCE661D961CD700AE313F /* postOrder Traverse.cpp */,
 				977BCE681D961CFA00AE313F /* inOrder Traverse.cpp */,
+				E388A6891CA2331700EC73EA /* Level Order Traverse Binary Tree.cpp */,
+				E33A59B61CB6C43F00497735 /* ZigZag Traverse Binary Tree.cpp */,
 			);
 			name = "Tree Traversal";
 			sourceTree = "<group>";
@@ -408,6 +412,13 @@
 				97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */,
 			);
 			name = "Basic Operations";
+			sourceTree = "<group>";
+		};
+		97BC97EB1DEBB3B900568CD1 /* KnapSack Problems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "KnapSack Problems";
 			sourceTree = "<group>";
 		};
 		E314ED051D5BD29600C05504 /* 2D */ = {
@@ -528,6 +539,8 @@
 		E3AC0D7E1D3C86FD00CE7A16 /* DP */ = {
 			isa = PBXGroup;
 			children = (
+				97BC97EC1DEBB41800568CD1 /* dp.h */,
+				97BC97EB1DEBB3B900568CD1 /* KnapSack Problems */,
 				E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */,
 				E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */,
 				E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */,
@@ -699,10 +712,7 @@
 				E33A599D1CB56B0200497735 /* Lowest Common Ancestor of BT.cpp */,
 				E33A59A11CB5754900497735 /* Lowest Common Ancestor has Parent.cpp */,
 				E33A59A31CB5755B00497735 /* Lowest Common Ancestor of K Nodes in BT.cpp */,
-				E388A6891CA2331700EC73EA /* Level Order Traverse Binary Tree.cpp */,
 				977BCE611D93917A00AE313F /* Populating Next Right Pointers.cpp */,
-				E33A59B61CB6C43F00497735 /* ZigZag Traverse Binary Tree.cpp */,
-				E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */,
 				E3FF97801CA6FE6800B78E30 /* Is Symmetric BT.cpp */,
 				E3FF97891CA7582900B78E30 /* Identical Binary Tree.cpp */,
 				E3FF978B1CA759AE00B78E30 /* Tweaked Identical BInary Trees.cpp */,
