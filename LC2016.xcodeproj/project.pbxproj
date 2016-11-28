@@ -26,6 +26,7 @@
 		97BC97EE1DEBE15400568CD1 /* P1. Naive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97ED1DEBE15400568CD1 /* P1. Naive.cpp */; };
 		97BC97F01DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97EF1DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp */; };
 		97BC97F21DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F11DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp */; };
+		97BC97F41DEC006600568CD1 /* P2. Classic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F31DEC006600568CD1 /* P2. Classic.cpp */; };
 		E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */; };
 		E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */; };
 		E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */; };
@@ -220,6 +221,7 @@
 		97BC97ED1DEBE15400568CD1 /* P1. Naive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P1. Naive.cpp"; sourceTree = "<group>"; };
 		97BC97EF1DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P1a. Naive, get num of solutions.cpp"; sourceTree = "<group>"; };
 		97BC97F11DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P1b. Naive, get min num of items.cpp"; sourceTree = "<group>"; };
+		97BC97F31DEC006600568CD1 /* P2. Classic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P2. Classic.cpp"; sourceTree = "<group>"; };
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 				97BC97ED1DEBE15400568CD1 /* P1. Naive.cpp */,
 				97BC97EF1DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp */,
 				97BC97F11DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp */,
+				97BC97F31DEC006600568CD1 /* P2. Classic.cpp */,
 			);
 			name = "KnapSack Problems";
 			sourceTree = "<group>";
@@ -918,6 +921,7 @@
 				97BC97F01DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp in Sources */,
 				E350ACEA1CD595C300DEE037 /* Graph Valid Tree.cpp in Sources */,
 				E3CB9EB81CA0CE1600CD17B6 /* Classic Binary Search.cpp in Sources */,
+				97BC97F41DEC006600568CD1 /* P2. Classic.cpp in Sources */,
 				E37EFF5C1D46B5E200B50582 /* Best Time to Buy and Sell Stock.cpp in Sources */,
 				E33370131CB316AB00728057 /* Reverse String.cpp in Sources */,
 				E388A6971CA5933D00EC73EA /* Check and Find Cycle in Linked List.cpp in Sources */,
