@@ -18,6 +18,14 @@ using namespace std;
  longestIncreasingSubArr[i] = during index (0, i) the longest increasing subarray ending at index i
  LIS[i] = LIS[i-1] + 1 // if input[i] > input[i-1]
         = 1 // else
+ 
+ input A[n] = {7, 2, 3, 1, 5, 8, 9, 6}
+ definition: M[n] represents the length of longest increasing subarray ends with A[n]
+ base case: M[0] = 1
+ induction rule:
+ M[n] = 1          (if A[n] <= A[n-1])
+      = M[n-1] + 1 (if A[n] >  A[n-1])
+ result: max
  */
 
 // time O(N), space O(N)
