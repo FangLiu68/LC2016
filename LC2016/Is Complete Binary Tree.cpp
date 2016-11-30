@@ -86,6 +86,7 @@ bool is_completeBT(BinaryTreeNode* root){
     bool flag = false;
     while(!qu.empty()){
         BinaryTreeNode* cur = qu.front();
+        qu.pop();
         if(cur){
             if(flag == true){
                 return false;

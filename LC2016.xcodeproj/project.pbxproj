@@ -416,6 +416,7 @@
 			children = (
 				E3DD848E1D9062410039D1DF /* Is Balanced BT.cpp */,
 				E3CDE61C1CC172E2008C0F71 /* Is Complete Binary Tree.cpp */,
+				E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */,
 				E3DEC3171D9F2BCF001D8D9B /* Max Depth of Binary Tree.cpp */,
 				97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */,
 			);
@@ -732,7 +733,6 @@
 				E3CDE6001CBE006C008C0F71 /* Right View Binary Tree.cpp */,
 				E3CDE6021CBE00B7008C0F71 /* Invert Binary Tree.cpp */,
 				E3CDE6111CBEEE2F008C0F71 /* Cousins in Binary Tree.cpp */,
-				E3CDE61E1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp */,
 				E350ACE91CD595C300DEE037 /* Graph Valid Tree.cpp */,
 				E350AD051CDA4BCB00DEE037 /* Border View of Binary Tree.cpp */,
 				977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */,
