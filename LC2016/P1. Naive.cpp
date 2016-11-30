@@ -95,7 +95,7 @@ int getMaxTotalWeight2(vector<int> weights, int w){
 
     return res;
 }*/
-
+/*
 int main(){
     vector<int> weights = {4, 3, 5};
     int w = 8;
@@ -104,5 +104,5 @@ int main(){
     return 0;
 }
 
-
+*/
 
