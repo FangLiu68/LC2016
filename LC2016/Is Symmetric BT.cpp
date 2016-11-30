@@ -11,17 +11,19 @@
 #include "BinaryTree.h"
 
 // time complexity O(N)
-bool helper_symmetric(BinaryTreeNode* one, BinaryTreeNode* two){
-    if(one == NULL && two == NULL){
-        return true;
-    }else if(one == NULL || two == NULL){
-        return false;
-    }else if(one->val != two->val){
+bool helper_symmetric(BinaryTreeNode* left, BinaryTreeNode* right){
+    // base case
+    if(left == NULL && right == NULL){
+        return true; // return true until find node under leaf node
+    }else if(left == NULL || right == NULL){
+        return false; // return false early (check from top to bottom, on the way to leaf node)
+    }else if(left->val != right->val){
         return false;
     }
-    
-    bool inside = helper_symmetric(one->right, two->left);
-    bool outside = helper_symmetric(one->left, two->right);
+
+    // recursive rule
+    bool inside = helper_symmetric(left->right, right->left);
+    bool outside = helper_symmetric(left->left, right->right);
     
     return inside && outside;
 }
