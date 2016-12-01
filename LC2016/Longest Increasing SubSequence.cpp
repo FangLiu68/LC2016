@@ -19,6 +19,19 @@
  
  Longest[i] = (0,i) longest ascending subsequence length ending at index i
  Longest[i] = max(Longest[j]) + 1 (0<=j<i and A[i]>A[j])
+ 
+ ======================================================
+ input A[n] = {7, 0, 3, 4, 1, 2, 3, 5, 8, 9, 10}
+ dp[i]: subarray[0, i] longest increasing subsequence
+ induction rule: dp[i] = max(dp[0], dp[i-1]) + 1
+                 if array[k] < array[i] (0<=k<=i)
+ base case: dp[i] = 1
+ result: max(dp[0], dp[array.size()-1])
+ 
+ 填表
+ index   0  1  2  3  4  5  6  7  8  9  10
+ array   7  0  3  4  1  2  3  5  8  9  10
+         1  1  2  3  2  3  4  5  6  7  8
  */
 
 #include <iostream>
