@@ -27,6 +27,9 @@
 		97BC97F01DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97EF1DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp */; };
 		97BC97F21DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F11DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp */; };
 		97BC97F41DEC006600568CD1 /* P2. Classic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F31DEC006600568CD1 /* P2. Classic.cpp */; };
+		97BC97F61DEFBA7100568CD1 /* Longest Common Substring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F51DEFBA7100568CD1 /* Longest Common Substring.cpp */; };
+		97BC97F81DEFC2DE00568CD1 /* Longest Common Subsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */; };
+		97BC97FA1DEFC47A00568CD1 /* Is Subsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */; };
 		E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */; };
 		E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */; };
 		E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */; };
@@ -222,6 +225,9 @@
 		97BC97EF1DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P1a. Naive, get num of solutions.cpp"; sourceTree = "<group>"; };
 		97BC97F11DEBFD8200568CD1 /* P1b. Naive, get min num of items.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P1b. Naive, get min num of items.cpp"; sourceTree = "<group>"; };
 		97BC97F31DEC006600568CD1 /* P2. Classic.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P2. Classic.cpp"; sourceTree = "<group>"; };
+		97BC97F51DEFBA7100568CD1 /* Longest Common Substring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Common Substring.cpp"; sourceTree = "<group>"; };
+		97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Common Subsequence.cpp"; sourceTree = "<group>"; };
+		97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Subsequence.cpp"; sourceTree = "<group>"; };
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
@@ -467,6 +473,7 @@
 				E33370221CB44E9100728057 /* Decompress Str II.cpp */,
 				E33370241CB49CCB00728057 /* Longest SubString without Repeated Chars.cpp */,
 				E33A59971CB55DC900497735 /* String Matching.cpp */,
+				97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */,
 			);
 			name = String;
 			sourceTree = "<group>";
@@ -567,6 +574,8 @@
 				E37EFF671D4859C600B50582 /* Minimum Path Sum.cpp */,
 				E37EFF6B1D486DC400B50582 /* Unique Paths.cpp */,
 				E37EFF6F1D4870D700B50582 /* Unique Paths II.cpp */,
+				97BC97F51DEFBA7100568CD1 /* Longest Common Substring.cpp */,
+				97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */,
 			);
 			name = DP;
 			sourceTree = "<group>";
@@ -986,6 +995,7 @@
 				E3AC0D821D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp in Sources */,
 				E33A59961CB551FA00497735 /* Reverse Linked List by Pair.cpp in Sources */,
 				E388A69B1CA5A3CA00EC73EA /* Merge Two Sorted Lists.cpp in Sources */,
+				97BC97FA1DEFC47A00568CD1 /* Is Subsequence.cpp in Sources */,
 				9774C63F1D8DC579005BBAE8 /* 8 Queens.cpp in Sources */,
 				E388A6841CA2296600EC73EA /* First Occurrence Elem.cpp in Sources */,
 				E37EFF911D5BB6BA00B50582 /* Union and Intersection of Two Unsorted Arrays.cpp in Sources */,
@@ -1035,6 +1045,7 @@
 				E388A67E1CA215A300EC73EA /* Selection Sort Array.cpp in Sources */,
 				E33370151CB3312300728057 /* Reverse Words in Sentence.cpp in Sources */,
 				E33A59C11CB6FF1400497735 /* Merge K Sorted Lists.cpp in Sources */,
+				97BC97F61DEFBA7100568CD1 /* Longest Common Substring.cpp in Sources */,
 				E37EFF7E1D49837C00B50582 /* Guess Number Higher or Lower.cpp in Sources */,
 				E388A67C1CA2158900EC73EA /* Move Zero to Right End.cpp in Sources */,
 				E3DD84871D8C74BF0039D1DF /* Remove Nth Node From End of List.cpp in Sources */,
@@ -1042,6 +1053,7 @@
 				E314ED0E1D5D5A0E00C05504 /* Median of Two Sorted Arrays.cpp in Sources */,
 				E3CDE6091CBE937F008C0F71 /* Has Sum Root To Leaf.cpp in Sources */,
 				E3B159F91CC6D137005D0E22 /* 2Sum One Pair Find Index.cpp in Sources */,
+				97BC97F81DEFC2DE00568CD1 /* Longest Common Subsequence.cpp in Sources */,
 				E37EFF5E1D46C8E900B50582 /* Best Time to Buy and Sell Stock II.cpp in Sources */,
 				E314ED0A1D5D54B900C05504 /* Trie Implementation.cpp in Sources */,
 				E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */,
