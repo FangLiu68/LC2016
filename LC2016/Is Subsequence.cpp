@@ -43,7 +43,7 @@ bool isValidSubsequence(string s, string t){
         return false;
     }
 }
-
+/*
 int main(){
     string s = "axc";
     string t = "ahbgdc";
@@ -52,4 +52,4 @@ int main(){
     }else{
         cout << 0 << endl;
     }
-}
+}*/
