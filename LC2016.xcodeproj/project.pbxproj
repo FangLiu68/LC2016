@@ -30,6 +30,7 @@
 		97BC97F61DEFBA7100568CD1 /* Longest Common Substring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F51DEFBA7100568CD1 /* Longest Common Substring.cpp */; };
 		97BC97F81DEFC2DE00568CD1 /* Longest Common Subsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */; };
 		97BC97FA1DEFC47A00568CD1 /* Is Subsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */; };
+		97BC97FF1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97FE1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp */; };
 		E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */; };
 		E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */; };
 		E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */; };
@@ -228,6 +229,7 @@
 		97BC97F51DEFBA7100568CD1 /* Longest Common Substring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Common Substring.cpp"; sourceTree = "<group>"; };
 		97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Common Subsequence.cpp"; sourceTree = "<group>"; };
 		97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Subsequence.cpp"; sourceTree = "<group>"; };
+		97BC97FE1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Subarray with Equal Num of 0 and 1.cpp"; sourceTree = "<group>"; };
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
@@ -440,6 +442,14 @@
 			name = "KnapSack Problems";
 			sourceTree = "<group>";
 		};
+		97BC97FB1DF2753800568CD1 /* 0/1 Array */ = {
+			isa = PBXGroup;
+			children = (
+				97BC97FE1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp */,
+			);
+			name = "0/1 Array";
+			sourceTree = "<group>";
+		};
 		E314ED051D5BD29600C05504 /* 2D */ = {
 			isa = PBXGroup;
 			children = (
@@ -561,6 +571,7 @@
 			children = (
 				97BC97EC1DEBB41800568CD1 /* dp.h */,
 				97BC97EB1DEBB3B900568CD1 /* KnapSack Problems */,
+				97BC97FB1DF2753800568CD1 /* 0/1 Array */,
 				E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */,
 				E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */,
 				E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */,
@@ -923,6 +934,7 @@
 				E3CDE61D1CC172E2008C0F71 /* Is Complete Binary Tree.cpp in Sources */,
 				E3FF97811CA6FE6800B78E30 /* Is Symmetric BT.cpp in Sources */,
 				E33A59921CB4B9B200497735 /* Pow.cpp in Sources */,
+				97BC97FF1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp in Sources */,
 				E3CDE60B1CBE93E7008C0F71 /* Find Sum Root To Leaf.cpp in Sources */,
 				E3CDE5FD1CBC061E008C0F71 /* Has Sum Any to Any(on Root to Leaf).cpp in Sources */,
 				E3CDE6031CBE00B7008C0F71 /* Invert Binary Tree.cpp in Sources */,
