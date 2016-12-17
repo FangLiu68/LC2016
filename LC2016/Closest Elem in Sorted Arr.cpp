@@ -19,32 +19,47 @@
  What if A is null or A is of zero length? We should return -1 in this case.
  */
 
+#include <vector>
 #include <iostream>
 using namespace std;
 
-int find_closest_elem(int arr[], int len, int target){
-    if(arr == NULL || len <= 0){
-        return -1;
+/*
+ suppose its sorted array.
+ use binary search and post processing (loop termination condition when index_left + 1 = index_right)
+ 
+ complexity:
+ tiem O(logN), space O(1)
+ 
+ test case:
+ arr[1,3,7,9,100], target 10, return 9
+ arr[1,3,7,9,100], target 7, return 7
+ arr[1,3,7,9,100], target 5, return 7 or 3
+ arr[1,3,3,7,9,100], target 2, return 1 or 3
+ arr[], target 8, throw exception
+ */
+int find_closet_num(vector<int> arr, int target){
+    if(arr.empty()){
+        throw invalid_argument("out of boundary");
     }
     
     int left = 0;
-    int right = len-1;
+    int right = arr.size() - 1;
     
-    while(left < right-1){
-        int mid = left+(right-left)/2;
+    while(left+1 < right){
+        int mid = left + (right-left)/2;
         if(arr[mid] == target){
-            return mid;
-        }else if(arr[mid] < target){ // 无法判断是否要舍去left/right，所以post processing
+            return arr[mid];
+        }else if(arr[mid] < target){
             left = mid;
         }else{
             right = mid;
         }
     }
     
-    if(abs(arr[left]-target) <= abs(arr[right]-target)){
-        return left;
-    }else {
-        return right;
+    if(abs(arr[left]-target) < abs(arr[right]-target)){
+        return arr[left];
+    }else{
+        return arr[right];
     }
 }
 
