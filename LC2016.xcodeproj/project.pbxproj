@@ -31,6 +31,8 @@
 		97BC97F81DEFC2DE00568CD1 /* Longest Common Subsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */; };
 		97BC97FA1DEFC47A00568CD1 /* Is Subsequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */; };
 		97BC97FF1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97FE1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp */; };
+		97BC98031DF28F9200568CD1 /* Find Number of Bits to be Flipped to Get Maximum 1's in Array.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC98021DF28F9200568CD1 /* Find Number of Bits to be Flipped to Get Maximum 1's in Array.cpp */; };
+		97BC98061DF3439300568CD1 /* Design Interface to addNode and removeSubtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC98051DF3439300568CD1 /* Design Interface to addNode and removeSubtree.cpp */; };
 		E30EE2C21D444B4800FCAFFF /* Set Matrix Zeros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */; };
 		E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */; };
 		E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */; };
@@ -135,7 +137,7 @@
 		E388A6A11CA5A8FD00EC73EA /* Partition List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E388A6A01CA5A8FD00EC73EA /* Partition List.cpp */; };
 		E388A6A31CA5A91900EC73EA /* Tree Traversal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */; };
 		E3950A031DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3950A021DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp */; };
-		E3AC0D801D3C871C00CE7A16 /* Largest SubArray Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */; };
+		E3AC0D801D3C871C00CE7A16 /* Maximum SubArray Sum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D7F1D3C871C00CE7A16 /* Maximum SubArray Sum.cpp */; };
 		E3AC0D821D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */; };
 		E3AC0D841D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */; };
 		E3AC0D871D3E85B400CE7A16 /* Maximum Product Subarray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3AC0D861D3E85B400CE7A16 /* Maximum Product Subarray.cpp */; };
@@ -230,6 +232,8 @@
 		97BC97F71DEFC2DE00568CD1 /* Longest Common Subsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Common Subsequence.cpp"; sourceTree = "<group>"; };
 		97BC97F91DEFC47A00568CD1 /* Is Subsequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Is Subsequence.cpp"; sourceTree = "<group>"; };
 		97BC97FE1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Subarray with Equal Num of 0 and 1.cpp"; sourceTree = "<group>"; };
+		97BC98021DF28F9200568CD1 /* Find Number of Bits to be Flipped to Get Maximum 1's in Array.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Number of Bits to be Flipped to Get Maximum 1's in Array.cpp"; sourceTree = "<group>"; };
+		97BC98051DF3439300568CD1 /* Design Interface to addNode and removeSubtree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Design Interface to addNode and removeSubtree.cpp"; sourceTree = "<group>"; };
 		E30EE2C11D444B4800FCAFFF /* Set Matrix Zeros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Set Matrix Zeros.cpp"; sourceTree = "<group>"; };
 		E30EE2C51D45A5C000FCAFFF /* Summary Ranges.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Summary Ranges.cpp"; sourceTree = "<group>"; };
 		E30EE2C71D45A99200FCAFFF /* Search for a Range.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Search for a Range.cpp"; sourceTree = "<group>"; };
@@ -336,7 +340,7 @@
 		E388A6A01CA5A8FD00EC73EA /* Partition List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Partition List.cpp"; sourceTree = "<group>"; };
 		E388A6A21CA5A91900EC73EA /* Tree Traversal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Tree Traversal.cpp"; sourceTree = "<group>"; };
 		E3950A021DC7D1FA00A1E0D5 /* Remove Trailing Zero Nodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Remove Trailing Zero Nodes.cpp"; sourceTree = "<group>"; };
-		E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Largest SubArray Sum.cpp"; sourceTree = "<group>"; };
+		E3AC0D7F1D3C871C00CE7A16 /* Maximum SubArray Sum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Maximum SubArray Sum.cpp"; sourceTree = "<group>"; };
 		E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Increasing SubArray.cpp"; sourceTree = "<group>"; };
 		E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Longest Increasing SubSequence.cpp"; sourceTree = "<group>"; };
 		E3AC0D861D3E85B400CE7A16 /* Maximum Product Subarray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Maximum Product Subarray.cpp"; sourceTree = "<group>"; };
@@ -446,8 +450,17 @@
 			isa = PBXGroup;
 			children = (
 				97BC97FE1DF275A300568CD1 /* Longest Subarray with Equal Num of 0 and 1.cpp */,
+				97BC98021DF28F9200568CD1 /* Find Number of Bits to be Flipped to Get Maximum 1's in Array.cpp */,
 			);
 			name = "0/1 Array";
+			sourceTree = "<group>";
+		};
+		97BC98041DF3435600568CD1 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				97BC98051DF3439300568CD1 /* Design Interface to addNode and removeSubtree.cpp */,
+			);
+			name = Design;
 			sourceTree = "<group>";
 		};
 		E314ED051D5BD29600C05504 /* 2D */ = {
@@ -572,7 +585,7 @@
 				97BC97EC1DEBB41800568CD1 /* dp.h */,
 				97BC97EB1DEBB3B900568CD1 /* KnapSack Problems */,
 				97BC97FB1DF2753800568CD1 /* 0/1 Array */,
-				E3AC0D7F1D3C871C00CE7A16 /* Largest SubArray Sum.cpp */,
+				E3AC0D7F1D3C871C00CE7A16 /* Maximum SubArray Sum.cpp */,
 				E3AC0D811D3C96DE00CE7A16 /* Longest Increasing SubArray.cpp */,
 				E3AC0D831D3D7C2100CE7A16 /* Longest Increasing SubSequence.cpp */,
 				E3AC0D861D3E85B400CE7A16 /* Maximum Product Subarray.cpp */,
@@ -734,6 +747,7 @@
 		E3CB9EB41CA0C81A00CD17B6 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
+				97BC98041DF3435600568CD1 /* Design */,
 				E388A68B1CA2333700EC73EA /* BinaryTree.h */,
 				97BC97E81DEA60B800568CD1 /* Basic Operations */,
 				977BCE631D96190700AE313F /* Tree Traversal */,
@@ -983,6 +997,7 @@
 				E3CB9EBA1CA0CF6400CD17B6 /* 2D Binary Search.cpp in Sources */,
 				E3336FEB1CB0CB1000728057 /* Common Nums in Two Unsorted Arr.cpp in Sources */,
 				E33370001CB1EB3A00728057 /* Remove Elem.cpp in Sources */,
+				97BC98031DF28F9200568CD1 /* Find Number of Bits to be Flipped to Get Maximum 1's in Array.cpp in Sources */,
 				E388A6861CA22BA300EC73EA /* Last Occurrence Elem.cpp in Sources */,
 				977BCE671D961CD700AE313F /* postOrder Traverse.cpp in Sources */,
 				E30EE2C61D45A5C000FCAFFF /* Summary Ranges.cpp in Sources */,
@@ -993,6 +1008,7 @@
 				E333700F1CB2D2D500728057 /* Repeatly Dedup Adj Elems.cpp in Sources */,
 				E33A59A91CB5B01E00497735 /* Remove Dup in Sorted Arr Keep One.cpp in Sources */,
 				E3336FED1CB0CE6E00728057 /* Common Nums in 2 Sorted Arr.cpp in Sources */,
+				97BC98061DF3439300568CD1 /* Design Interface to addNode and removeSubtree.cpp in Sources */,
 				E3CDE5DA1CB9A6E9008C0F71 /* Remove Nodes in BST Outside of Range.cpp in Sources */,
 				E33A59BF1CB6F71800497735 /* Merge Two Sorted Arr.cpp in Sources */,
 				E37EFF801D498BC400B50582 /* Intersection of Two Arrays.cpp in Sources */,
@@ -1069,7 +1085,7 @@
 				E37EFF5E1D46C8E900B50582 /* Best Time to Buy and Sell Stock II.cpp in Sources */,
 				E314ED0A1D5D54B900C05504 /* Trie Implementation.cpp in Sources */,
 				E30EE2C81D45A99200FCAFFF /* Search for a Range.cpp in Sources */,
-				E3AC0D801D3C871C00CE7A16 /* Largest SubArray Sum.cpp in Sources */,
+				E3AC0D801D3C871C00CE7A16 /* Maximum SubArray Sum.cpp in Sources */,
 				E3336FE31CB03E6A00728057 /* Common Elem in 3 Sorted Arr.cpp in Sources */,
 				E388A67A1CA2154B00EC73EA /* Rainbow Sort.cpp in Sources */,
 				9774C6431D8DC77B005BBAE8 /* Number of Valid Brackets Expressions.cpp in Sources */,
