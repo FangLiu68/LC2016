@@ -33,11 +33,11 @@ using namespace std;
  test case:
  arr[1,3,7,9,100], target 10, return 9
  arr[1,3,7,9,100], target 7, return 7
- arr[1,3,7,9,100], target 5, return 7 or 3
- arr[1,3,3,7,9,100], target 2, return 1 or 3
+ arr[1,3,7,9,100], target 5, return 7
+ arr[1,3,3,7,9,100], target 2, return 3
  arr[], target 8, throw exception
  */
-int find_closet_num(vector<int> arr, int target){
+int find_closest_num(vector<int> arr, int target){
     if(arr.empty()){
         throw invalid_argument("out of boundary");
     }
@@ -62,4 +62,11 @@ int find_closet_num(vector<int> arr, int target){
         return arr[right];
     }
 }
-
+/*
+int main(){
+    vector<int> arr = {1,3,7,9,100};
+    int target = 2;
+    cout << find_closest_num(arr, target) << endl;
+    return 0;
+}
+*/
