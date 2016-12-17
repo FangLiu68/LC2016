@@ -22,6 +22,7 @@
 		977BCE691D961CFA00AE313F /* inOrder Traverse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977BCE681D961CFA00AE313F /* inOrder Traverse.cpp */; };
 		977BCE6B1D96273200AE313F /* Closest BST Value II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */; };
 		977BCE6D1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977BCE6C1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp */; };
+		97AE5DDE1E04FA0A00B5E640 /* Sqrt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97AE5DDD1E04FA0A00B5E640 /* Sqrt.cpp */; };
 		97BC97EA1DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */; };
 		97BC97EE1DEBE15400568CD1 /* P1. Naive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97ED1DEBE15400568CD1 /* P1. Naive.cpp */; };
 		97BC97F01DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BC97EF1DEBFB6E00568CD1 /* P1a. Naive, get num of solutions.cpp */; };
@@ -223,6 +224,7 @@
 		977BCE681D961CFA00AE313F /* inOrder Traverse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "inOrder Traverse.cpp"; sourceTree = "<group>"; };
 		977BCE6A1D96273200AE313F /* Closest BST Value II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Closest BST Value II.cpp"; sourceTree = "<group>"; };
 		977BCE6C1D96EEB100AE313F /* Find Num of Subseq Sum to K.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Num of Subseq Sum to K.cpp"; sourceTree = "<group>"; };
+		97AE5DDD1E04FA0A00B5E640 /* Sqrt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sqrt.cpp; sourceTree = "<group>"; };
 		97BC97E91DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Min Depth of Binay Tree.cpp"; sourceTree = "<group>"; };
 		97BC97EC1DEBB41800568CD1 /* dp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dp.h; sourceTree = "<group>"; };
 		97BC97ED1DEBE15400568CD1 /* P1. Naive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "P1. Naive.cpp"; sourceTree = "<group>"; };
@@ -798,6 +800,7 @@
 				E37EFF7D1D49837C00B50582 /* Guess Number Higher or Lower.cpp */,
 				E314ED0B1D5D557200C05504 /* Valid Perfect Square.cpp */,
 				E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */,
+				97AE5DDD1E04FA0A00B5E640 /* Sqrt.cpp */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -974,6 +977,7 @@
 				E33370231CB44E9100728057 /* Decompress Str II.cpp in Sources */,
 				E388A6A11CA5A8FD00EC73EA /* Partition List.cpp in Sources */,
 				97BC97EA1DEA7FED00568CD1 /* Min Depth of Binay Tree.cpp in Sources */,
+				97AE5DDE1E04FA0A00B5E640 /* Sqrt.cpp in Sources */,
 				9774C6471D8DCAC1005BBAE8 /* Implement Queue using Stacks.cpp in Sources */,
 				E33A59B21CB6BDFE00497735 /* Largest and Smallest Num.cpp in Sources */,
 				E388A6991CA59D7700EC73EA /* Insert in Sorted List.cpp in Sources */,

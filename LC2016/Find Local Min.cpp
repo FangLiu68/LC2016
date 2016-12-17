@@ -17,3 +17,48 @@
 #include <iostream>
 using namespace std;
 
+/*
+ Binary Search and post processing
+ if arr[mid]<arr[mid+1] && arr[mid]<arr[mid-1], return mid
+ if arr[mid]>arr[mid+1], left = mid;
+ else, right = mid
+ 
+ complexity:
+ time O(logN), space O(1)
+ 
+ test case:
+ arr[1,3,5,6,5], return 0
+ arr[0], return 0
+ arr[2,2], return 1
+ */
+int find_local_min(vector<int> arr){
+    if(arr.empty()){
+        return -1;
+    }
+    int left = 0;
+    int right = arr.size() - 1;
+
+    while(left+1 < right){
+        int mid = left + (right-left)/2;
+        if(arr[mid]<arr[mid+1] && arr[mid]<arr[mid-1]){
+            return mid;
+        }else if(arr[mid] > arr[mid+1]){
+            left = mid;
+        }else{
+            right = mid;
+        }
+    }
+
+    if(arr[left]<arr[right]){
+        return left;
+    }else{
+        return right;
+    }
+}
+/*
+int main(){
+    vector<int> arr = {2,2};
+    cout << find_local_min(arr) << endl;
+    return 0;
+}
+*/
