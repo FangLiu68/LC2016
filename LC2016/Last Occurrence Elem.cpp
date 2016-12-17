@@ -9,35 +9,65 @@
 // Given a sorted array, return the last index of the target element. If the target couldn't be found, return -1.
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
-int find_last_occur(int arr[], int len, int target){
-    if(arr == NULL || len <= 0){
+/*
+ Solution:
+ Binary Search.
+ post-check, loop stops when index_left + 1 = index_right.
+ we wanna find the last targe number, so we should check arr[right] first.
+ 
+ Complexity:
+ Time O(logN), space O(1)
+ */
+
+/*
+ test case:
+ arr[1,5,5,5,5], target 5, return index 4
+ arr[1,1,5,5,5], target 1, return index 1
+ arr[1,5], target -3, return index -1
+ arr[1,5], target 8, return index -1
+ arr[1,5], target 3, return index -1
+ arr[1], target 1, return index 0
+ arr[], target 8, return index -1
+ */
+int find_last_target(vector<int> arr, int target){
+    if(arr.empty() || arr[0]>target || arr[arr.size()-1]<target){
         return -1;
     }
     
     int left = 0;
-    int right = len - 1;
-    while(left < right-1){ // NOTE
-        int mid = left + (right-left)/2;
+    int right = arr.size() - 1;
+    
+    while(left + 1 < right){
+        int mid = left + (right - left)/2;
         if(arr[mid] == target){
             left = mid;
         }else if(arr[mid] < target){
-            left = mid+1;
+            left = mid;
         }else{
-            right = mid-1;
+            right = mid;
         }
     }
     
     if(arr[right] == target){
         return right;
-    }
-    if(arr[left] == target){
+    }else if(arr[left] == target){
         return left;
+    }else{
+        return -1;
     }
-    
-    return -1;
 }
+
+/*
+int main(){
+    vector<int> arr = {1,1,5,5,5};
+    int target = 1;
+    cout << find_last_target(arr, target) << endl;
+    return 0;
+}
+*/
 /*
 int main(){
     int arr[] = {4, 5, 5, 5, 5, 6, 6, 8};
