@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971A2C7D1E09A8530015745B /* Find Insert Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 971A2C7C1E09A8530015745B /* Find Insert Position.cpp */; };
 		9774C63B1D8CEF32005BBAE8 /* Reverse Linked List II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9774C63A1D8CEF32005BBAE8 /* Reverse Linked List II.cpp */; };
 		9774C63D1D8DBDFE005BBAE8 /* Subarrays Sum to 0.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9774C63C1D8DBDFE005BBAE8 /* Subarrays Sum to 0.cpp */; };
 		9774C63F1D8DC579005BBAE8 /* 8 Queens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9774C63E1D8DC579005BBAE8 /* 8 Queens.cpp */; };
@@ -209,6 +210,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		971A2C7C1E09A8530015745B /* Find Insert Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Insert Position.cpp"; sourceTree = "<group>"; };
 		9774C63A1D8CEF32005BBAE8 /* Reverse Linked List II.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Reverse Linked List II.cpp"; sourceTree = "<group>"; };
 		9774C63C1D8DBDFE005BBAE8 /* Subarrays Sum to 0.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Subarrays Sum to 0.cpp"; sourceTree = "<group>"; };
 		9774C63E1D8DC579005BBAE8 /* 8 Queens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "8 Queens.cpp"; sourceTree = "<group>"; };
@@ -801,6 +803,7 @@
 				E314ED0B1D5D557200C05504 /* Valid Perfect Square.cpp */,
 				E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */,
 				97AE5DDD1E04FA0A00B5E640 /* Sqrt.cpp */,
+				971A2C7C1E09A8530015745B /* Find Insert Position.cpp */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -1080,6 +1083,7 @@
 				E350AD061CDA4BCB00DEE037 /* Border View of Binary Tree.cpp in Sources */,
 				E388A67E1CA215A300EC73EA /* Selection Sort Array.cpp in Sources */,
 				E33370151CB3312300728057 /* Reverse Words in Sentence.cpp in Sources */,
+				971A2C7D1E09A8530015745B /* Find Insert Position.cpp in Sources */,
 				E33A59C11CB6FF1400497735 /* Merge K Sorted Lists.cpp in Sources */,
 				97BC97F61DEFBA7100568CD1 /* Longest Common Substring.cpp in Sources */,
 				E37EFF7E1D49837C00B50582 /* Guess Number Higher or Lower.cpp in Sources */,
