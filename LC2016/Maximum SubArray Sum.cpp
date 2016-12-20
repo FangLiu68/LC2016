@@ -26,6 +26,7 @@ using namespace std;
  step 2: get all sub-arrays' sum
  step 3: Find the max sum.
  */
+/*
 int maxSubarr_bruteForce(vector<int> arr){
     if(arr.empty()){
         return INT_MIN;
@@ -37,7 +38,7 @@ int maxSubarr_bruteForce(vector<int> arr){
             for()
         }
     }
-}
+}*/
 
 /*
  DP:
