@@ -158,6 +158,7 @@
 		E3B23A461DADBE8100EE1EFE /* Binary Tree Paths.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B23A451DADBE8100EE1EFE /* Binary Tree Paths.cpp */; };
 		E3B514941D67D57A0078F1BC /* Min Races.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B514931D67D57A0078F1BC /* Min Races.cpp */; };
 		E3C5055D1E04E89A005C08C2 /* Find Local Min.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */; };
+		E3C505611E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3C505601E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp */; };
 		E3CB9EAB1CA0C7D100CD17B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EAA1CA0C7D100CD17B6 /* main.cpp */; };
 		E3CB9EB81CA0CE1600CD17B6 /* Classic Binary Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EB71CA0CE1600CD17B6 /* Classic Binary Search.cpp */; };
 		E3CB9EBA1CA0CF6400CD17B6 /* 2D Binary Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EB91CA0CF6400CD17B6 /* 2D Binary Search.cpp */; };
@@ -364,6 +365,7 @@
 		E3B23A451DADBE8100EE1EFE /* Binary Tree Paths.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Binary Tree Paths.cpp"; sourceTree = "<group>"; };
 		E3B514931D67D57A0078F1BC /* Min Races.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Min Races.cpp"; sourceTree = "<group>"; };
 		E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Local Min.cpp"; sourceTree = "<group>"; };
+		E3C505601E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Min in Rotated Sorted Arr NoDup.cpp"; sourceTree = "<group>"; };
 		E3CB9EA71CA0C7D100CD17B6 /* LC2016 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LC2016; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CB9EAA1CA0C7D100CD17B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E3CB9EB71CA0CE1600CD17B6 /* Classic Binary Search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Classic Binary Search.cpp"; sourceTree = "<group>"; };
@@ -804,6 +806,7 @@
 				E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */,
 				97AE5DDD1E04FA0A00B5E640 /* Sqrt.cpp */,
 				971A2C7C1E09A8530015745B /* Find Insert Position.cpp */,
+				E3C505601E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -1026,6 +1029,7 @@
 				E33A59BD1CB6F40000497735 /* Merge K Sorted Arr.cpp in Sources */,
 				E3DEC3161D9DA040001D8D9B /* Binary Tree Maximum Path Sum.cpp in Sources */,
 				977BCE651D96193C00AE313F /* preOrder Traverse.cpp in Sources */,
+				E3C505611E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp in Sources */,
 				E33A59A01CB573A300497735 /* Lowest Common Ancestor of BST.cpp in Sources */,
 				E3CDE61B1CC1439D008C0F71 /* Num of Valid Parentheses.cpp in Sources */,
 				E388A6951CA3945800EC73EA /* Reverse Linked List.cpp in Sources */,
