@@ -159,6 +159,7 @@
 		E3B514941D67D57A0078F1BC /* Min Races.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3B514931D67D57A0078F1BC /* Min Races.cpp */; };
 		E3C5055D1E04E89A005C08C2 /* Find Local Min.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */; };
 		E3C505611E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3C505601E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp */; };
+		E3C505631E09E082005C08C2 /* Find Min in Rotated Sorted Arr hasDup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3C505621E09E082005C08C2 /* Find Min in Rotated Sorted Arr hasDup.cpp */; };
 		E3CB9EAB1CA0C7D100CD17B6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EAA1CA0C7D100CD17B6 /* main.cpp */; };
 		E3CB9EB81CA0CE1600CD17B6 /* Classic Binary Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EB71CA0CE1600CD17B6 /* Classic Binary Search.cpp */; };
 		E3CB9EBA1CA0CF6400CD17B6 /* 2D Binary Search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3CB9EB91CA0CF6400CD17B6 /* 2D Binary Search.cpp */; };
@@ -366,6 +367,7 @@
 		E3B514931D67D57A0078F1BC /* Min Races.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Min Races.cpp"; sourceTree = "<group>"; };
 		E3C5055C1E04E89A005C08C2 /* Find Local Min.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Local Min.cpp"; sourceTree = "<group>"; };
 		E3C505601E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Min in Rotated Sorted Arr NoDup.cpp"; sourceTree = "<group>"; };
+		E3C505621E09E082005C08C2 /* Find Min in Rotated Sorted Arr hasDup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Find Min in Rotated Sorted Arr hasDup.cpp"; sourceTree = "<group>"; };
 		E3CB9EA71CA0C7D100CD17B6 /* LC2016 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LC2016; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3CB9EAA1CA0C7D100CD17B6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E3CB9EB71CA0CE1600CD17B6 /* Classic Binary Search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "Classic Binary Search.cpp"; sourceTree = "<group>"; };
@@ -807,6 +809,7 @@
 				97AE5DDD1E04FA0A00B5E640 /* Sqrt.cpp */,
 				971A2C7C1E09A8530015745B /* Find Insert Position.cpp */,
 				E3C505601E09DE54005C08C2 /* Find Min in Rotated Sorted Arr NoDup.cpp */,
+				E3C505621E09E082005C08C2 /* Find Min in Rotated Sorted Arr hasDup.cpp */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -1004,6 +1007,7 @@
 				E3CDE61F1CC18A3C008C0F71 /* Count Complete Binary Tree Nodes.cpp in Sources */,
 				E3AC0D871D3E85B400CE7A16 /* Maximum Product Subarray.cpp in Sources */,
 				9774C63D1D8DBDFE005BBAE8 /* Subarrays Sum to 0.cpp in Sources */,
+				E3C505631E09E082005C08C2 /* Find Min in Rotated Sorted Arr hasDup.cpp in Sources */,
 				977BCE621D93917A00AE313F /* Populating Next Right Pointers.cpp in Sources */,
 				9774C6451D8DC961005BBAE8 /* Implement Stack using Queues.cpp in Sources */,
 				E3CDE5FB1CBB57B1008C0F71 /* Max Sum Any to Any(on Root to Leaf).cpp in Sources */,
