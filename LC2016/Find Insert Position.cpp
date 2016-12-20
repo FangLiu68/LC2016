@@ -16,38 +16,37 @@
 using namespace std;
 
 /*
- Find the largest smaller than the target.
+ 下面的做法适用于has non-dup or dup elements.
+ Find the largest smaller than the target, suppose the answer(its index) is i, then the insert position should be i+1
+ we should guarantee the answer is always in [left, right]
+ what are all the posible cases after while() loop is exited:
+ left <= right < target
+ left < target <= right
+ target <= left <= right
  */
-int find_insert_pos(vector<int> arr, int target){
-    if(arr.empty()){
+int find_insert_pos(vector<int> nums, int target){
+    if(nums.empty()){
         return -1;
     }
 
-    if(arr.size() == 1){
-        if(arr[0] >= target){
-            return 0;
-        }else{
-            return 1;
-        }
-    }
-
     int left = 0;
-    int right = arr.size() - 1;
+    int right = nums.size() - 1;
 
     while(left+1 < right){
         int mid = left + (right-left)/2;
-        if(arr[mid] < target){
+        if(nums[mid] < target){
             left = mid;
-        }else if(arr[mid] > target){
+        }else if(nums[mid] > target){
             right = mid-1;
         }else{
             right = mid-1;
         }
     }
 
-    if(arr[right] < target){
+    // 包含了size()==1的情况
+    if(nums[right] < target){
         return right+1;
-    }else if(arr[left] >= target){
+    }else if(nums[left] >= target){
         return left;
     }else{
         return right;
@@ -55,8 +54,8 @@ int find_insert_pos(vector<int> arr, int target){
 }
 /*
 int main(){
-    int target = 7;
-    vector<int> arr1 = {1,3,5,6};
+    int target = 4;
+    vector<int> arr1 = {1,3,3,3,5,6};
     cout << find_insert_pos(arr1, target) << endl;
     return 0;
 }*/
