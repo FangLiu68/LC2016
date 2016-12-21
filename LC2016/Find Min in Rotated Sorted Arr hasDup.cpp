@@ -20,7 +20,7 @@
 #include <iostream>
 using namespace std;
 
-int findMin(vector<int>& nums) {
+int findMin_hasDup(vector<int>& nums) {
     if(nums.empty()){
         return INT_MAX;
     }
