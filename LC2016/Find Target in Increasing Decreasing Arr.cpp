@@ -73,10 +73,10 @@ int find_target_in_increasing_decreasing_arr(vector<int>& arr, int target){
         return -1;
     }
 }
-
+/*
 int main(){
     vector<int> arr = {1,3,6,7,4,2,0};
     int target = 2;
     cout << find_target_in_increasing_decreasing_arr(arr, target) << endl;
     return 0;
-}
+}*/
