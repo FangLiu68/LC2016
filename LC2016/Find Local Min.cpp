@@ -49,11 +49,7 @@ int find_local_min(vector<int> arr){
         }
     }
 
-    if(arr[left]<arr[right]){
-        return left;
-    }else{
-        return right;
-    }
+    return arr[left]<arr[right]? left:right;
 }
 /*
 int main(){
