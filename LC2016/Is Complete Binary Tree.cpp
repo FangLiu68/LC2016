@@ -11,18 +11,18 @@
  
  Examples
  
- 5
- /    \
- 3      8
- /   \
- 1      4
+        5
+     /    \
+    3      8
+  /   \
+ 1     4
  is completed.
  
- 5
- /    \
- 3       8
- /   \       \
- 1      4      11
+        5
+     /    \
+    3      8
+  /   \     \
+ 1     4     11
  is not completed.
  
  Corner Cases
@@ -33,11 +33,11 @@
  
  For Example:
  The sequence [1, 2, 3, #, #, 4] represents the following binary tree:
- 1
- /   \
+    1
+  /   \
  2     3
- /
- 4
+      /
+     4
  
  例子：
             5
@@ -82,7 +82,7 @@ bool is_completeBT(BinaryTreeNode* root){
     queue<BinaryTreeNode*> qu;
     qu.push(root);
     
-    // use a flag to indicate if we found teh first node that doesn't have both children
+    // use a flag to indicate if we found the first node that doesn't have both children
     bool flag = false;
     while(!qu.empty()){
         BinaryTreeNode* cur = qu.front();
