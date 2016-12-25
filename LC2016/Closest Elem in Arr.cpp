@@ -62,11 +62,27 @@ int find_closest_num(vector<int> arr, int target){
         return arr[right];
     }
 }
+
+int find_closest_unsorted_arr(vector<int>& arr, int target){
+    if(arr.empty()){
+        return INT_MAX;
+    }
+    int gap = INT_MAX;
+    int res = INT_MAX;
+    for(int i=0; i<arr.size(); ++i){
+        if(abs(arr[i]-target) < gap){
+            gap = abs(arr[i]-target);
+            res = arr[i];
+        }
+    }
+    return res;
+}
+
 /*
 int main(){
-    vector<int> arr = {1,3,7,9,100};
-    int target = 2;
-    cout << find_closest_num(arr, target) << endl;
+    vector<int> arr = {1,10,17,6,100};
+    int target = 8;
+    cout << find_closest_unsorted_arr(arr, target) << endl;
     return 0;
 }
 */
