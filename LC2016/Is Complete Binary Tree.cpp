@@ -55,6 +55,8 @@ using namespace std;
 /*
  find the first node without both children.
  after that node, none of the nodes should have any child.
+ 上面的说法不准确。应该是
+ 找到第一个为空的NODE,设flag为true。在这个NODE之后，如果存在任何一个非空NODE，即不是complete bianry tree.
  
  flag = false; // find first node without both children
  
