@@ -8,6 +8,17 @@
 
 /*
  Invert a binary tree
+        4
+      /   \
+     2     7
+    / \   / \
+   1   3 6   9
+ to
+        4
+      /   \
+     7     2
+    / \   / \
+   9   6 3   1
  */
 
 #include "BinaryTree.h"
@@ -27,3 +38,16 @@ BinaryTreeNode* invertTree(BinaryTreeNode* root) {
     
     return root;
 }
+/*
+int main(){
+    BinaryTreeNode* root = new BinaryTreeNode(4);
+    BinaryTreeNode* node1 = new BinaryTreeNode(7);
+    BinaryTreeNode* node2 = new BinaryTreeNode(2);
+    root->left = node1;
+    root->right = node2;
+    BinaryTreeNode* res = invertTree(root);
+    cout << res->val << endl;
+    cout << res->left->val << endl;
+    cout << res->right->val << endl;
+    return 0;
+}*/
