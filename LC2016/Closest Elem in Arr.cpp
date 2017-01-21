@@ -37,42 +37,39 @@ using namespace std;
  arr[1,3,3,7,9,100], target 2, return 3
  arr[], target 8, throw exception
  */
-int find_closest_num(vector<int> arr, int target){
-    if(arr.empty()){
+int find_closest_num(vector<int> input, int target){
+    if(input.empty()){
         throw invalid_argument("out of boundary");
     }
     
     int left = 0;
-    int right = arr.size() - 1;
+    int right = input.size() - 1;
     
     while(left+1 < right){
         int mid = left + (right-left)/2;
-        if(arr[mid] == target){
-            return arr[mid];
-        }else if(arr[mid] < target){
+        if(input[mid] == target){
+            return input[mid];
+        }else if(input[mid] < target){
             left = mid;
         }else{
             right = mid;
         }
     }
-    
-    if(abs(arr[left]-target) < abs(arr[right]-target)){
-        return arr[left];
-    }else{
-        return arr[right];
-    }
+
+    return target-input[left]<input[right]-target? left:right;
 }
 
-int find_closest_unsorted_arr(vector<int>& arr, int target){
-    if(arr.empty()){
+int find_closest_unsorted_arr(vector<int>& input, int target){
+    if(input.empty()){
         return INT_MAX;
     }
-    int gap = INT_MAX;
-    int res = INT_MAX;
-    for(int i=0; i<arr.size(); ++i){
-        if(abs(arr[i]-target) < gap){
-            gap = abs(arr[i]-target);
-            res = arr[i];
+    int res = input[0];
+    int gap = abs(res-target);
+
+    for(int i=1; i<input.size(); ++i){
+        if(abs(input[i]-target) < gap){
+            res = input[i];
+            gap = abs(input[i]-target);
         }
     }
     return res;
