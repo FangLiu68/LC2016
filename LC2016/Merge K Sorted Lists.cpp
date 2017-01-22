@@ -29,14 +29,12 @@ using namespace std;
  */
 struct comp{
     bool operator()(ListNode* node1, ListNode* node2){
-        return node1->val >= node2->val; // min heap;
+        return node1->val > node2->val; // min heap;
     }
 };
 
 ListNode* mergeKLists(vector<ListNode*>& lists){
     if(lists.empty()) return NULL;
-    ListNode dummyNode(INT_MIN);
-    ListNode* cur = &dummyNode;
     
     // push each list's first node into priority queue
     priority_queue<ListNode*, vector<ListNode*>, comp> min_heap;
@@ -45,19 +43,22 @@ ListNode* mergeKLists(vector<ListNode*>& lists){
             min_heap.push(lists[i]);
         }
     }
-    
+
+    ListNode dummyNode(INT_MIN);
+    ListNode* cur = &dummyNode;
+
     while(!min_heap.empty()){
-        ListNode* top = min_heap.top();
-        cur->next = top;
-        cur = cur->next;
+        cur->next = min_heap.top();
         min_heap.pop();
-        if(top->next){
-            min_heap.push(top->next);
+        cur = cur->next;
+        if(cur->next){
+            min_heap.push(cur->next);
         }
     }
     
     return dummyNode.next;
 }
+
 /*
 int main(){
     ListNode* node11 = new ListNode(1);
