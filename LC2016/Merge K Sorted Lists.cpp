@@ -19,13 +19,18 @@
 using namespace std;
 
 /*
+ Method 1:
  we could use a min heap of size k.
  The heap is first initialized with the smallest element from  each list.
  Then as we extract the nodes out from the heap, we must remember to insert its next node into the heap.
- As each insert operation into the heap costs log(k) and there are a total of n*k elements, teh total runtime complexity is O(nk logk)
- Ignoring the extra space that is used to store the output list, we only use extra space of O(K) due to the heap.
  
- this method works when lists have non-repeated/ repeated values.
+ time:
+ build size k heap use O(K)
+ every node get push/pop of heap once, each time cost O(logK)
+ so totally runtime: O(K)+O(NK* (logK+logK)) = O(NKlogK)
+ 
+ space:
+ O(K) for building heap.
  */
 struct comp{
     bool operator()(ListNode* node1, ListNode* node2){
@@ -33,7 +38,7 @@ struct comp{
     }
 };
 
-ListNode* mergeKLists(vector<ListNode*>& lists){
+ListNode* mergeKLists_heap(vector<ListNode*>& lists){
     if(lists.empty()) return NULL;
     
     // push each list's first node into priority queue
@@ -58,6 +63,57 @@ ListNode* mergeKLists(vector<ListNode*>& lists){
     
     return dummyNode.next;
 }
+
+/*
+ Method 2:
+ for those k sorted lists: lists[0], lists[1], lists[2]... lists[k-3], lists[k-2], lists[k-1]
+ we first merge lists[0] and lists[k-1], and set result as lists[0]
+ then merge lists[1] and lists[k-2], set result as lists[1]
+ ...
+ after done each round, then go over again to merge the two pairs, until we only have one list left.
+ 
+ Time:
+ while loop一共执行了logK次（因为每次lists的数量减半）
+ 每次while loop要把每个list都走一遍，所以是 O(NK)
+ 所以一共时间为 O(NKlogK). 和上一种做法时间一样。
+ */
+ListNode* helper_mergeTwoLists(ListNode* l1, ListNode* l2);
+ListNode* mergeKLists_byPair(vector<ListNode*>& lists) {
+    if (lists.empty()) return NULL;
+    int len = lists.size();
+    while (len > 1) {
+        for (int i = 0; i < len / 2; ++i) {
+            lists[i] = helper_mergeTwoLists(lists[i], lists[len - 1 - i]);
+        }
+        len = (len + 1) / 2;
+    }
+
+    return lists[0];
+}
+
+ListNode* helper_mergeTwoLists(ListNode* l1, ListNode* l2) {
+    if(l1==NULL){
+        return l2;
+    }
+    if(l2==NULL){
+        return l1;
+    }
+    ListNode dummyNode(INT_MIN);
+    ListNode* cur = &dummyNode;
+    while(l1 && l2){
+        if(l1->val < l2->val){
+            cur->next = l1;
+            l1 = l1->next;
+        }else{
+            cur->next = l2;
+            l2 = l2->next;
+        }
+        cur = cur->next;
+    }
+    cur->next = l1? l1:l2;
+    return dummyNode.next;
+}
+
 
 /*
 int main(){
