@@ -26,7 +26,7 @@
 #include "LinkedList.h"
 
 
-ListNode* merge_two_sorted_lists(ListNode* one, ListNode* two){
+ListNode* mergeTwoLists_iter(ListNode* one, ListNode* two){
     if(one == NULL) return two;
     if(two == NULL) return one;
     
@@ -47,4 +47,17 @@ ListNode* merge_two_sorted_lists(ListNode* one, ListNode* two){
     cur->next = one? one:two;
     
     return dummy.next;
+}
+
+ListNode* mergeTwoLists_recur(ListNode* l1, ListNode* l2) {
+    if (l1 == NULL) return l2;
+    else if (l2 == NULL) return l1;
+    if (l1->val <= l2->val) {
+        l1->next = mergeTwoLists_recur(l1->next, l2);
+        return l1;
+    }
+    else {
+        l2->next = mergeTwoLists_recur(l1, l2->next);
+        return l2;
+    }
 }
