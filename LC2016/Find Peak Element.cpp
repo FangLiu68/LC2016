@@ -33,9 +33,9 @@ int find_peak(vector<int>& input){
         if(input[mid] > input[mid-1] && input[mid] > input[mid+1]){
             return mid;
         }else if(input[mid] < input[mid-1]){
-            right = mid;
+            right = mid-1;
         }else{
-            left = mid;
+            left = mid+1;
         }
     }
     

@@ -24,9 +24,9 @@ using namespace std;
     arr[mid]>arr[mid+1]: left half
  2. do binary search on the increasing position and decreasing position
  */
-int helper_findMax(vector<int>& arr){
+int helper_findIndexMax(vector<int>& arr){
     if(arr.empty()){
-        return INT_MIN;
+        return -1;
     }
     int left = 0;
     int right = arr.size()-1;
@@ -43,7 +43,7 @@ int helper_findMax(vector<int>& arr){
 
 int helper_binarySearch(vector<int>& arr, int left, int right, int target){
     if(arr.empty()){
-        return INT_MIN;
+        return -1;
     }
     while(left <= right){
         int mid = left+(right-left)/2;
@@ -62,16 +62,10 @@ int find_target_in_increasing_decreasing_arr(vector<int>& arr, int target){
     if(arr.empty()){
         return -1;
     }
-    int maxValue_index = helper_findMax(arr);
+    int maxValue_index = helper_findIndexMax(arr);
     int left_res = helper_binarySearch(arr, 0, maxValue_index, target);
     int right_res = helper_binarySearch(arr, maxValue_index+1, arr.size()-1, target);
-    if(left_res != -1){
-        return left_res;
-    }else if(right_res != -1){
-        return right_res;
-    }else{
-        return -1;
-    }
+    return (left_res!=0)? left_res:right_res;
 }
 /*
 int main(){

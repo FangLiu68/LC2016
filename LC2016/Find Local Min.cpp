@@ -20,8 +20,8 @@ using namespace std;
 /*
  Binary Search and post processing
  if arr[mid]<arr[mid+1] && arr[mid]<arr[mid-1], return mid
- if arr[mid]>arr[mid+1], left = mid;
- else, right = mid
+ if arr[mid]>arr[mid+1]: we can guarantee there is a local minimum at the right side
+ if arr[mid]>arr[mid-1]: we can guarantee there is a local minimum at the left side
  
  complexity:
  time O(logN), space O(1)
@@ -43,9 +43,9 @@ int find_local_min(vector<int> arr){
         if(arr[mid]<arr[mid+1] && arr[mid]<arr[mid-1]){
             return mid;
         }else if(arr[mid] > arr[mid+1]){
-            left = mid;
+            left = mid+1;
         }else{
-            right = mid;
+            right = mid-1;
         }
     }
 

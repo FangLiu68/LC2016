@@ -8,7 +8,9 @@
 
 /*
  Find the inserting position in a sorted array for a target number.
- eg, [1,2,3,3,3,4,5,6], insert 3 ==> index 2
+ eg, 
+ [1,2,3,3,3,6], insert 3 ==> index 2
+  0 1 2 3 4 5   insert 4 ==> index 5
  */
 
 #include <vector>
@@ -24,11 +26,17 @@ using namespace std;
  left < target <= right
  target <= left <= right
  */
-int find_insert_pos(vector<int> nums, int target){
+int find_insert_pos(vector<int>& nums, int target){
     if(nums.empty()){
         return -1;
     }
 
+    if(nums[0] >= target){
+        return 0;
+    }
+    if(nums[nums.size()-1] < target){
+        return nums.size();
+    }
     int left = 0;
     int right = nums.size() - 1;
 
@@ -38,11 +46,12 @@ int find_insert_pos(vector<int> nums, int target){
             left = mid;
         }else if(nums[mid] > target){
             right = mid-1;
-        }else{
+        }else{ // nums[mid] == target
             right = mid-1;
         }
     }
 
+    /*
     // 包含了size()==1的情况
     if(nums[right] < target){
         return right+1;
@@ -50,7 +59,8 @@ int find_insert_pos(vector<int> nums, int target){
         return left;
     }else{
         return right;
-    }
+    }*/
+    return nums[right]<target? (right+1):(left+1);
 }
 /*
 int main(){
